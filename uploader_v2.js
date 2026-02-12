@@ -105,9 +105,10 @@ async function processAnime(filePath) {
                 }
 
                 console.log(`   ⬆️ Uploading...`);
+                const uniqueId = `${anime.slug}-ep${ep.episode}-${res}`;
                 const uploadedMsg = await client.sendFile(DUMP_CHAT_ID, {
                     file: tempFile,
-                    caption: `**${anime.title}**\nEps ${ep.episode} [${res}]\n#${anime.slug}`,
+                    caption: `🎬 **${anime.title}**\n💿 Episode: ${ep.episode} [${res}]\n🆔 ID: \`${uniqueId}\`\n\n#${anime.slug}`,
                     forceDocument: false, // JANGAN kirim sebagai dokumen
                     supportsStreaming: true, // AKTIFKAN Streaming
                     attributes: [
