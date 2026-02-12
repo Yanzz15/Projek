@@ -157,24 +157,43 @@ async function processAnime(filePath) {
     }
 }
 
+console.log("🚀 Script dimulai...");
+
 async function start() {
-    console.log('🔄 Login...');
-    await client.start({ botAuthToken: BOT_TOKEN });
-    console.log('✅ Login Sukses. Mode: MULTI-THREADED SULTAN 🚀');
-    
-    // Validasi Channel
-    try { await client.getEntity(DUMP_CHAT_ID); } 
-    catch (e) { console.log('❌ Gagal akses channel'); process.exit(1); }
+    try {
+        console.log('🔄 Menginisialisasi Client...');
+        await client.connect(); // Tambahan: Connect eksplisit
+        console.log('🔄 Terhubung. Melakukan Login Bot...');
+        
+        await client.start({
+            botAuthToken: BOT_TOKEN,
+        });
+        console.log('✅ Login Sukses. Mode: MULTI-THREADED SULTAN 🚀');
+        
+        // Validasi Channel
+        try { 
+            await client.getEntity(DUMP_CHAT_ID); 
+            console.log('✅ Akses Channel OK');
+        } 
+        catch (e) { 
+            console.log('❌ Gagal akses channel:', e.message); 
+            // Jangan exit dulu, coba lanjut siapa tau bisa
+        }
 
-    const files = fs.readdirSync(JSON_DIR).filter(f => f.endsWith('.json'));
-    console.log(`📦 Queue: ${files.length} Anime.`);
+        const files = fs.readdirSync(JSON_DIR).filter(f => f.endsWith('.json'));
+        console.log(`📦 Queue: ${files.length} Anime.`);
 
-    // Parallel Anime Processing
-    for (let i = 0; i < files.length; i += MAX_PARALLEL_ANIME) {
-        const batchFiles = files.slice(i, i + MAX_PARALLEL_ANIME);
-        console.log(`\n--- Batch Baru: Menggarap ${batchFiles.length} Anime Sekaligus ---`);
-        await Promise.all(batchFiles.map(file => processAnime(path.join(JSON_DIR, file))));
+        // Parallel Anime Processing
+        for (let i = 0; i < files.length; i += MAX_PARALLEL_ANIME) {
+            const batchFiles = files.slice(i, i + MAX_PARALLEL_ANIME);
+            console.log(`\n--- Batch Baru: Menggarap ${batchFiles.length} Anime Sekaligus ---`);
+            await Promise.all(batchFiles.map(file => processAnime(path.join(JSON_DIR, file))));
+        }
+
+        console.log('🎉 SEMUA SELESAI!');
+    } catch (err) {
+        console.error("🔥 FATAL ERROR DI START:", err);
     }
-
-    console.log('🎉 SEMUA SELESAI!');
 }
+
+start().catch(err => console.error("🔥 Unhandled Rejection:", err));
