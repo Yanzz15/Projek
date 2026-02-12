@@ -169,11 +169,6 @@ async function start() {
 
     console.log('✅ Bot Login Sukses!');
     
-    // FIX ERROR "CHANNEL ID NOT FOUND"
-    // Kita paksa bot ambil daftar chat dulu biar nge-cache ID-nya
-    console.log('🔄 Memuat Cache Channel...');
-    await client.getDialogs(); 
-    
     // Cek apakah Bot bisa akses Channel Gudang
     try {
         await client.getEntity(DUMP_CHAT_ID);
