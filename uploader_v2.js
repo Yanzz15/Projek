@@ -1,4 +1,3 @@
-require('dotenv').config();
 const { TelegramClient } = require('telegram');
 const { StringSession } = require('telegram/sessions');
 const { createClient } = require('@supabase/supabase-js');
@@ -6,19 +5,29 @@ const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 
-// Konfigurasi
-const apiId = parseInt(process.env.API_ID);
-const apiHash = process.env.API_HASH;
-const botToken = process.env.BOT_TOKEN;
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_KEY;
-const sessionString = new StringSession(process.env.SESSION_STRING || '');
+// ==========================================
+// 💀 DAERAH HARDCODE (DILARANG UBAH KECUALI PAHAM)
+// ==========================================
 
-// ID Channel Database (Gudang File)
+const API_ID = 38988077;
+const API_HASH = '64eddd3cb9a135a49decd3e89674ab87';
+const BOT_TOKEN = '8118729786:AAFEf6QFVAZQowlpTqB51J3-WeA7EQteeV4';
+
+// Database Supabase
+const SUPABASE_URL = 'https://ajeukqjcqweuofclpdjo.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFqZXVrcWpjcXdldW9mY2xwZGpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA5MTA5NjMsImV4cCI6MjA4NjQ4Njk2M30.DfSpKC2u3u3MKynG9gkZsG_a4M5_AtQbs9QI1OYpwZQ';
+
+// ID Channel Gudang (Format BigInt dengan -100 di depan)
+// Dari link Tuan: -3638979264 -> -1003638979264
 const DUMP_CHAT_ID = BigInt('-1003638979264'); 
 
-const supabase = createClient(supabaseUrl, supabaseKey);
-const client = new TelegramClient(sessionString, apiId, apiHash, { connectionRetries: 5 });
+// ==========================================
+
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+const client = new TelegramClient(new StringSession(''), API_ID, API_HASH, { 
+    connectionRetries: 5,
+    useWSS: false 
+});
 
 const JSON_DIR = path.join(__dirname, 'anime_json');
 const TEMP_DIR = path.join(__dirname, 'temp_downloads');
@@ -30,7 +39,10 @@ async function downloadFile(url, filepath) {
     const response = await axios({
         url,
         method: 'GET',
-        responseType: 'stream'
+        responseType: 'stream',
+        headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' // Biar gak diblokir
+        }
     });
     response.data.pipe(writer);
     return new Promise((resolve, reject) => {
@@ -43,16 +55,21 @@ async function processAnime(filePath) {
     const rawData = fs.readFileSync(filePath);
     const anime = JSON.parse(rawData);
     
-    console.log(`\n📂 Memproses Anime: ${anime.title}`);
+    console.log(`\n📂 Anime: ${anime.title}`);
 
-    // 1. Cek/Buat Anime di Database
+    // Cek/Buat Anime di DB
     let { data: dbAnime } = await supabase.from('mikunime').select('*').eq('title', anime.slug).single();
     
     if (!dbAnime) {
-        console.log(`   ✨ Anime baru! Menyimpan ke DB...`);
+        // console.log(`   ✨ Anime baru di DB...`);
         const { data: newAnime } = await supabase
             .from('mikunime')
-            .insert({ title: anime.slug, episodes: [], poster: anime.poster, synopsis: anime.synopsis })
+            .insert({
+                title: anime.slug, 
+                poster: anime.poster, 
+                synopsis: anime.synopsis,
+                episodes: [] 
+            })
             .select()
             .single();
         dbAnime = newAnime;
@@ -60,43 +77,53 @@ async function processAnime(filePath) {
 
     let dbEpisodes = dbAnime.episodes || [];
 
-    // 2. Loop Episode
+    // Loop Episodes
     for (const ep of anime.episodes) {
-        // Cek apakah episode ini sudah lengkap di DB?
         const existingEpIndex = dbEpisodes.findIndex(e => e.episode === ep.episode);
         let existingEp = existingEpIndex > -1 ? dbEpisodes[existingEpIndex] : null;
 
-        // Loop Resolusi (480p, 720p)
+        // Loop Resolusi
         for (const [res, url] of Object.entries(ep.streams)) {
+            // Skip jika link archive.org (biasanya lambat/mati)
+            if (url.includes('archive.org')) continue;
+
             if (existingEp && existingEp.links && existingEp.links[res]) {
-                console.log(`   ⏭️ Episode ${ep.episode} [${res}] sudah ada. Skip.`);
+                // console.log(`   ⏭️Eps ${ep.episode} [${res}] Skip.`);
                 continue;
             }
 
-            console.log(`   ⬇️ Downloading Eps ${ep.episode} [${res}]...`);
+            console.log(`   ⬇️ DL Eps ${ep.episode} [${res}]...`);
             const tempFile = path.join(TEMP_DIR, `${anime.slug}-ep${ep.episode}-${res}.mp4`);
 
             try {
                 await downloadFile(url, tempFile);
-                console.log(`   ⬆️ Uploading ke Telegram...`);
+                
+                // Cek ukuran file (0 byte = gagal)
+                const stats = fs.statSync(tempFile);
+                if (stats.size < 1000) {
+                    throw new Error("File corrupt/kecil (mungkin link mati)");
+                }
 
+                console.log(`   ⬆️ Uploading...`);
                 const uploadedMsg = await client.sendFile(DUMP_CHAT_ID, {
                     file: tempFile,
-                    caption: `**${anime.title}**\nEpisode ${ep.episode} [${res}]\n\n#${anime.slug}`,
+                    caption: `**${anime.title}**\nEps ${ep.episode} [${res}]\n#${anime.slug}`,
                     forceDocument: true,
-                    workers: 4 // Parallel upload chunks
+                    workers: 4
                 });
 
-                const channelIdStr = DUMP_CHAT_ID.toString().replace('-100', '');
-                const fileLink = `https://t.me/c/${channelIdStr}/${uploadedMsg.id}`;
+                // Generate Link Public Channel
+                // Rumus: https://t.me/c/ID_TANPA_-100/MSG_ID
+                const cleanId = DUMP_CHAT_ID.toString().replace('-100', '');
+                const fileLink = `https://t.me/c/${cleanId}/${uploadedMsg.id}`;
 
-                // Update Local Array
+                // Update Array Local
                 if (!existingEp) {
                     existingEp = { episode: ep.episode, links: {} };
                     dbEpisodes.push(existingEp);
-                    // Re-sort biar rapi
+                    // Re-sort
                     dbEpisodes.sort((a, b) => a.episode - b.episode);
-                    // Update index reference
+                    // Refresh index
                     const newIndex = dbEpisodes.findIndex(e => e.episode === ep.episode);
                     existingEp = dbEpisodes[newIndex];
                 }
@@ -104,20 +131,18 @@ async function processAnime(filePath) {
                 if (!existingEp.links) existingEp.links = {};
                 existingEp.links[res] = fileLink;
 
-                // Simpan ke Supabase per satu file sukses (Safety save)
+                // Save ke Supabase
                 await supabase.from('mikunime').update({ episodes: dbEpisodes }).eq('id', dbAnime.id);
                 
-                console.log(`   ✅ Selesai: ${fileLink}`);
+                console.log(`   ✅ Done: ${fileLink}`);
 
-                // Hapus File
                 fs.unlinkSync(tempFile);
 
-                // Jeda Anti-Flood (PENTING!)
-                console.log(`   ⏳ Cooldown 20 detik...`);
-                await new Promise(r => setTimeout(r, 20000));
+                // Anti-Flood Delay
+                await new Promise(r => setTimeout(r, 5000)); 
 
             } catch (err) {
-                console.error(`   ❌ GagalEps ${ep.episode} [${res}]: ${err.message}`);
+                console.error(`   ❌ Gagal: ${err.message}`);
                 if (fs.existsSync(tempFile)) fs.unlinkSync(tempFile);
             }
         }
@@ -125,18 +150,38 @@ async function processAnime(filePath) {
 }
 
 async function start() {
-    console.log('🔄 Login Telegram...');
-    await client.start({ botAuthToken: botToken });
-    console.log('✅ Bot Siap! Memulai Mass Upload...');
+    console.log('🔄 Menghubungkan Bot...');
+    
+    // Login Pake Bot Token
+    await client.start({
+        botAuthToken: BOT_TOKEN,
+    });
+
+    console.log('✅ Bot Login Sukses!');
+    
+    // FIX ERROR "CHANNEL ID NOT FOUND"
+    // Kita paksa bot ambil daftar chat dulu biar nge-cache ID-nya
+    console.log('🔄 Memuat Cache Channel...');
+    await client.getDialogs(); 
+    
+    // Cek apakah Bot bisa akses Channel Gudang
+    try {
+        await client.getEntity(DUMP_CHAT_ID);
+        console.log(`✅ Akses ke Channel Gudang (${DUMP_CHAT_ID}) OK!`);
+    } catch (e) {
+        console.log(`❌ ERROR: Bot tidak bisa akses Channel ${DUMP_CHAT_ID}`);
+        console.log(`⚠️ Pastikan Bot @${(await client.getMe()).username} sudah jadi ADMIN di channel tersebut!`);
+        process.exit(1);
+    }
 
     const files = fs.readdirSync(JSON_DIR).filter(f => f.endsWith('.json'));
-    console.log(`📦 Ditemukan ${files.length} file JSON.`);
+    console.log(`📦 Queue: ${files.length} Anime.`);
 
     for (const file of files) {
         await processAnime(path.join(JSON_DIR, file));
     }
 
-    console.log('🎉 SEMUA TUGAS SELESAI!');
+    console.log('🎉 SELESAI!');
 }
 
 start();
