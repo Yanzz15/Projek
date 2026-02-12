@@ -1,4 +1,4 @@
-const { TelegramClient } = require('telegram');
+const { TelegramClient, Api } = require('telegram');
 const { StringSession } = require('telegram/sessions');
 const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs');
@@ -108,7 +108,16 @@ async function processAnime(filePath) {
                 const uploadedMsg = await client.sendFile(DUMP_CHAT_ID, {
                     file: tempFile,
                     caption: `**${anime.title}**\nEps ${ep.episode} [${res}]\n#${anime.slug}`,
-                    forceDocument: true,
+                    forceDocument: false, // JANGAN kirim sebagai dokumen
+                    supportsStreaming: true, // AKTIFKAN Streaming
+                    attributes: [
+                        new Api.DocumentAttributeVideo({
+                            duration: 0,
+                            w: res === '720p' ? 1280 : 854,
+                            h: res === '720p' ? 720 : 480,
+                            supportsStreaming: true
+                        })
+                    ],
                     workers: 4
                 });
 
