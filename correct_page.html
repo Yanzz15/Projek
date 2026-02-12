@@ -1,0 +1,1834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="id">
+<head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="b89dc23b5ad74440991c538d-text/javascript">if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script type="b89dc23b5ad74440991c538d-text/javascript">(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+
+<meta name="viewport" content="width=device-width" />
+<meta name="theme-color" content="#0c70de">
+<meta name="msapplication-navbutton-color" content="#0c70de">
+<meta name="apple-mobile-web-app-status-bar-style" content="#0c70de">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>(END) Oshi no Ko Episode 11 Subtitle Indonesia - SOKUJA</title>
+	<meta name="description" content="Nonton dan Download Anime (END) Oshi no Ko Episode 11 Subtitle Indonesia 360p 480p 720p BD HD MP4 MKV Batch Gratis!" />
+	<link rel="canonical" href="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/" />
+	<meta property="og:locale" content="id_ID" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="(END) Oshi no Ko Episode 11 Subtitle Indonesia - SOKUJA" />
+	<meta property="og:description" content="Nonton dan Download Anime (END) Oshi no Ko Episode 11 Subtitle Indonesia 360p 480p 720p BD HD MP4 MKV Batch Gratis!" />
+	<meta property="og:url" content="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/" />
+	<meta property="og:site_name" content="SOKUJA" />
+	<meta property="article:publisher" content="https://www.facebook.com/Sokuja-102377075939318" />
+	<meta property="article:published_time" content="2023-06-28T16:00:38+00:00" />
+	<meta property="article:modified_time" content="2023-07-07T23:35:39+00:00" />
+	<meta property="og:image" content="https://gbr.sokuja.uk/wp-content/uploads/2023/06/oshi-no-ko-11-scaled.jpg" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="450" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="sokuja" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Ditulis oleh" />
+	<meta name="twitter:data1" content="sokuja" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#article","isPartOf":{"@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/"},"author":{"name":"sokuja","@id":"https://x3.sokuja.uk/#/schema/person/df41ef364339e79834871ebcdf3223c4"},"headline":"(END) Oshi no Ko Episode 11 Subtitle Indonesia","datePublished":"2023-06-28T16:00:38+00:00","dateModified":"2023-07-07T23:35:39+00:00","mainEntityOfPage":{"@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/"},"wordCount":7,"commentCount":5,"publisher":{"@id":"https://x3.sokuja.uk/#organization"},"image":{"@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#primaryimage"},"thumbnailUrl":"https://gbr.sokuja.uk/wp-content/uploads/2023/06/oshi-no-ko-11-scaled.jpg","keywords":["\"Oshi no Ko\"","anime sub indo"],"articleSection":["\"Oshi no Ko\" Subtitle Indonesia"],"inLanguage":"id","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#respond"]}]},{"@type":"WebPage","@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/","url":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/","name":"(END) Oshi no Ko Episode 11 Subtitle Indonesia - SOKUJA","isPartOf":{"@id":"https://x3.sokuja.uk/#website"},"primaryImageOfPage":{"@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#primaryimage"},"image":{"@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#primaryimage"},"thumbnailUrl":"https://gbr.sokuja.uk/wp-content/uploads/2023/06/oshi-no-ko-11-scaled.jpg","datePublished":"2023-06-28T16:00:38+00:00","dateModified":"2023-07-07T23:35:39+00:00","description":"Nonton dan Download Anime (END) Oshi no Ko Episode 11 Subtitle Indonesia 360p 480p 720p BD HD MP4 MKV Batch Gratis!","breadcrumb":{"@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#breadcrumb"},"inLanguage":"id","potentialAction":[{"@type":"ReadAction","target":["https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/"]}]},{"@type":"ImageObject","inLanguage":"id","@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#primaryimage","url":"https://gbr.sokuja.uk/wp-content/uploads/2023/06/oshi-no-ko-11-scaled.jpg","contentUrl":"https://gbr.sokuja.uk/wp-content/uploads/2023/06/oshi-no-ko-11-scaled.jpg","width":800,"height":450},{"@type":"BreadcrumbList","@id":"https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://x3.sokuja.uk/"},{"@type":"ListItem","position":2,"name":"(END) Oshi no Ko Episode 11 Subtitle Indonesia"}]},{"@type":"WebSite","@id":"https://x3.sokuja.uk/#website","url":"https://x3.sokuja.uk/","name":"SOKUJA","description":"Download &amp; Streaming Anime Subtitle Indonesia","publisher":{"@id":"https://x3.sokuja.uk/#organization"},"alternateName":"Download & Streaming Anime Subtitle Indonesia","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://x3.sokuja.uk/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"id"},{"@type":"Organization","@id":"https://x3.sokuja.uk/#organization","name":"SOKUJA","alternateName":"Download & Streaming Anime Subtitle Indonesia","url":"https://x3.sokuja.uk/","logo":{"@type":"ImageObject","inLanguage":"id","@id":"https://x3.sokuja.uk/#/schema/logo/image/","url":"https://gbr.sokuja.uk/wp-content/uploads/2022/08/logo.png","contentUrl":"https://gbr.sokuja.uk/wp-content/uploads/2022/08/logo.png","width":860,"height":190,"caption":"SOKUJA"},"image":{"@id":"https://x3.sokuja.uk/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/Sokuja-102377075939318","https://www.facebook.com/profile.php?id=100085229192490","https://www.youtube.com/channel/UCmMHerbLh_fzsOuPkergNJg","https://sokuja.id"]},{"@type":"Person","@id":"https://x3.sokuja.uk/#/schema/person/df41ef364339e79834871ebcdf3223c4","name":"sokuja","image":{"@type":"ImageObject","inLanguage":"id","@id":"https://x3.sokuja.uk/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/650d4d8c5322ba465fa143c1c19ced52b99d6d0af173d191ff64830a3652b60f?s=96&d=monsterid&r=g","contentUrl":"https://secure.gravatar.com/avatar/650d4d8c5322ba465fa143c1c19ced52b99d6d0af173d191ff64830a3652b60f?s=96&d=monsterid&r=g","caption":"sokuja"},"sameAs":["https://sokuja.id/"],"url":"https://x3.sokuja.uk/author/sokuja/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="SOKUJA &raquo; (END) Oshi no Ko Episode 11 Subtitle Indonesia Umpan Komentar" href="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://x3.sokuja.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fx3.sokuja.uk%2Fend-oshi-no-ko-episode-11-subtitle-indonesia%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://x3.sokuja.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fx3.sokuja.uk%2Fend-oshi-no-ko-episode-11-subtitle-indonesia%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link data-minify="1" rel='stylesheet' id='dashicons-css' href='https://x3.sokuja.uk/wp-content/cache/min/1/wp-includes/css/dashicons.min.css?ver=1770044876' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='style-css' href='https://x3.sokuja.uk/wp-content/cache/background-css/1/x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/style.css?ver=1770044876&wpr_t=1770845155' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='darkstyle-css' href='https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/css/darkmode.css?ver=1770044876' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='fontawesome-css' href='https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/css/font-awesome.min.css?ver=1770044876' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='owl-carousel-css' href='https://x3.sokuja.uk/wp-content/cache/background-css/1/x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/css/owl.carousel.css?ver=1770044876&wpr_t=1770845155' type='text/css' media='all' />
+<script type="rocketlazyloadscript">
+var ajaxurl = 'https://x3.sokuja.uk/wp-admin/admin-ajax.php';
+var max_bookmark = 50;
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/themes/sokuja/assets/js/jquery.min.js?ver=3.5.1" id="jquery-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="jquery-js-after">
+/* <![CDATA[ */
+const themesia_lang = {"admin_add_episode_category_error":"Cannot auto select post category","admin_add_episode_series_error":"Cannot auto select Series"};
+const tsCastDefaultImg = 'https://x3.sokuja.uk/wp-content/themes/sokuja/assets/img/character-default.png';
+//# sourceURL=jquery-js-after
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/themes/sokuja/assets/js/owl.carousel.min.js?ver=2.3.4" id="owl-carousel-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/js/tsmedia.js?ver=1770044877" id="tsmedia-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/js/tsfn.js?ver=1770044876" id="ts-functions-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/js/popular_widget.js?ver=1770044876" id="popular_widget-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/js/bookmark.js?ver=1770044876" id="bookmarks_script-js"></script>
+<link rel="https://api.w.org/" href="https://x3.sokuja.uk/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://x3.sokuja.uk/wp-json/wp/v2/posts/10316" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://x3.sokuja.uk/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://x3.sokuja.uk/?p=10316' />
+		<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+				var sf_templates = "<a href=\"{search_url_escaped}\">View All Results<\/a>";
+				var sf_position = '0';
+				var sf_input = '.search-live';
+				jQuery(document).ready(function(){
+					jQuery(sf_input).ajaxyLiveSearch({"expand":false,"searchUrl":"https:\/\/x3.sokuja.uk\/?s=%s","text":"Cari Judul Anime...","delay":500,"iwidth":180,"width":350,"ajaxUrl":"https:\/\/x3.sokuja.uk\/wp-admin\/admin-ajax.php","rtl":0});
+					jQuery(".live-search_ajaxy-selective-input").keyup(function() {
+						var width = jQuery(this).val().length * 8;
+						if(width < 50) {
+							width = 50;
+						}
+						jQuery(this).width(width);
+					});
+					jQuery(".live-search_ajaxy-selective-search").click(function() {
+						jQuery(this).find(".live-search_ajaxy-selective-input").focus();
+					});
+					jQuery(".live-search_ajaxy-selective-close").click(function() {
+						jQuery(this).parent().remove();
+					});
+				});
+		</script>
+		<!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-27WBTY36L4"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-27WBTY36L4');
+</script>
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4736762,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4736762&101" hidden></a></noscript>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/cache/min/1/check_vid_error.js?ver=1770044876"></script><script type="rocketlazyloadscript">
+	$(document).ready(function(){
+		$(".shme").click(function(){
+			$(".mm").toggleClass("shwx");
+		});
+		$(".expand").click(function(){
+			$(".megavid").toggleClass("xp");
+			$(".pd-expand").toggleClass("sxp");
+		});
+		$('.expand').click(function() {
+			if ($('.expand').hasClass('slamdown')){
+				$('.expand').removeClass('slamdown');
+				jQuery(".mvelement").prependTo(jQuery(".megavid"));
+			} else {
+				$('.expand').addClass('slamdown');
+				jQuery(".mvelement").appendTo(jQuery(".pd-expand"));
+			  }
+		});
+		$(".gnr").click(function(){
+			$(".gnrx").toggleClass("shwgx");
+		});
+		$(".light").click(function(){
+			$(".lowvid").toggleClass("highvid");
+		});
+		$(".colap").click(function(){
+			$(".mindes").toggleClass("alldes");
+		});
+		$(".topmobile").click(function(){
+			$(".topmobcon").toggleClass("topmobshow");
+		});
+		$(".toggler").click(function(){
+			$(".inmenu").toggleClass("inmshow");
+		});
+		$(".twoscmob").click(function(){
+			$(".searchdesk").toggleClass("searchmobi");
+		});
+		$(".srcmob").click(function(){
+			$(".minmb").toggleClass("minmbx");
+		});
+	});
+	</script>
+	<script type="rocketlazyloadscript">
+	var defaultTheme = "darkmode";
+	var tsmjsload = true;
+	</script>
+		<style>.releases.hothome{background:#0c70de;}</style>		<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+	//<![CDATA[
+	$(document).ready(function(){
+	   $("#shadow").css("height", $(document).height()).hide();
+	   $(".light").click(function(){
+		  $("#shadow").toggle();
+			 if ($("#shadow").is(":hidden"))
+				$(this).html("<i class='far fa-lightbulb' aria-hidden='true'></i> <span>Matikan Lampu</span>").removeClass("turnedOff");
+			 else
+				$(this).html("<i class='fas fa-lightbulb' aria-hidden='true'></i> <span>Nyalakan Lampu</span>").addClass("turnedOff");
+			 });
+
+	  });
+	//]]>
+	</script>
+<link rel="icon" href="https://gbr.sokuja.uk/wp-content/uploads/2022/08/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://gbr.sokuja.uk/wp-content/uploads/2022/08/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://gbr.sokuja.uk/wp-content/uploads/2022/08/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://gbr.sokuja.uk/wp-content/uploads/2022/08/cropped-favicon-270x270.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.slidtop .trending .tdb .textbg.blxc{--wpr-bg-91c312fc-7b9e-45b3-8cec-66252314bacc: url('https://x3.sokuja.uk/wp-content/themes/sokuja/assets/images/black.png');}.serieslist.pop ul li.topone .limit .bw{--wpr-bg-ed3ff640-276b-4027-b480-2385d4ec255e: url('https://x3.sokuja.uk/wp-content/themes/sokuja/assets/images/item-shadow.png');}.slide-shadow{--wpr-bg-634ddf2e-8dd9-4c2a-b778-75a75ff341f4: url('https://x3.sokuja.uk/wp-content/themes/sokuja/assets/images/pattern.png');}.slidtop .trending .tdb .crown{--wpr-bg-80554a24-6dc5-4f7b-a289-fd8029ffc5c4: url('https://x3.sokuja.uk/wp-content/themes/sokuja/assets/images/crown.png');}.serieslist.pop ul li.topone .limit .shadow{--wpr-bg-fe77401c-93c7-4e72-81ff-f4c2ca0bf649: url('https://x3.sokuja.uk/wp-content/themes/sokuja/assets/images/pattern.png');}.owl-carousel .owl-video-play-icon{--wpr-bg-ad3cd908-4293-4703-98f9-90dafd72f4fc: url('https://x3.sokuja.uk/wp-content/themes/sokuja/assets/css/owl.video.play.png');}.slide-shadow{--wpr-bg-90513169-ddca-4152-adc6-0c01e218a2a3: url('https://x3.sokuja.uk/wp-content/themes/sokuja/assets/images/patterns/brilliant.png');}</style>
+</noscript>
+<script type="b89dc23b5ad74440991c538d-application/javascript">const rocket_pairs = [{"selector":".slidtop .trending .tdb .textbg.blxc","style":".slidtop .trending .tdb .textbg.blxc{--wpr-bg-91c312fc-7b9e-45b3-8cec-66252314bacc: url('https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/black.png');}","hash":"91c312fc-7b9e-45b3-8cec-66252314bacc","url":"https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/black.png"},{"selector":".serieslist.pop ul li.topone .limit .bw","style":".serieslist.pop ul li.topone .limit .bw{--wpr-bg-ed3ff640-276b-4027-b480-2385d4ec255e: url('https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/item-shadow.png');}","hash":"ed3ff640-276b-4027-b480-2385d4ec255e","url":"https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/item-shadow.png"},{"selector":".slide-shadow","style":".slide-shadow{--wpr-bg-634ddf2e-8dd9-4c2a-b778-75a75ff341f4: url('https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/pattern.png');}","hash":"634ddf2e-8dd9-4c2a-b778-75a75ff341f4","url":"https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/pattern.png"},{"selector":".slidtop .trending .tdb .crown","style":".slidtop .trending .tdb .crown{--wpr-bg-80554a24-6dc5-4f7b-a289-fd8029ffc5c4: url('https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/crown.png');}","hash":"80554a24-6dc5-4f7b-a289-fd8029ffc5c4","url":"https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/crown.png"},{"selector":".serieslist.pop ul li.topone .limit .shadow","style":".serieslist.pop ul li.topone .limit .shadow{--wpr-bg-fe77401c-93c7-4e72-81ff-f4c2ca0bf649: url('https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/pattern.png');}","hash":"fe77401c-93c7-4e72-81ff-f4c2ca0bf649","url":"https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/pattern.png"},{"selector":".owl-carousel .owl-video-play-icon","style":".owl-carousel .owl-video-play-icon{--wpr-bg-ad3cd908-4293-4703-98f9-90dafd72f4fc: url('https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/css\/owl.video.play.png');}","hash":"ad3cd908-4293-4703-98f9-90dafd72f4fc","url":"https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/css\/owl.video.play.png"},{"selector":".slide-shadow","style":".slide-shadow{--wpr-bg-90513169-ddca-4152-adc6-0c01e218a2a3: url('https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/patterns\/brilliant.png');}","hash":"90513169-ddca-4152-adc6-0c01e218a2a3","url":"https:\/\/x3.sokuja.uk\/wp-content\/themes\/sokuja\/assets\/images\/patterns\/brilliant.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.20.3" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_minify_js wpr_lazyload_iframes wpr_image_dimensions wpr_minify_css wpr_host_fonts_locally wpr_desktop" /></head>
+<body class="darkmode" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<script type="rocketlazyloadscript">
+			if (localStorage.getItem("thememode") == null){
+				if (defaultTheme == "lightmode"){
+					jQuery("body").addClass("lightmode");
+					jQuery("body").removeClass("darkmode");
+				}else{
+					jQuery("body").addClass("darkmode");
+					jQuery("body").removeClass("lightmode");
+				}
+			}else if (localStorage.getItem("thememode") == "lightmode"){
+				jQuery("body").addClass("lightmode");
+				jQuery("body").removeClass("darkmode");
+			}else{
+				jQuery("body").addClass("darkmode");
+				jQuery("body").removeClass("lightmode");
+			}
+	</script>
+<div id='shadow'></div>
+
+<div data-rocket-location-hash="0da892370ec206d1ffa2b7fdf9624350" class="th">
+	<div data-rocket-location-hash="7a74ae08e9e27b2befce95ce3492c03e" class="centernav bound">
+	
+	<div data-rocket-location-hash="8c11fb63b930c8f68e3572a2577786e7" class="shme"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	
+	<header data-rocket-location-hash="933f9bc9f230798d29d8a85dc33879f1" class="mainheader" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+		<div class="site-branding logox">
+					<span class="logos">
+				<a title="SOKUJA - Download &amp; Streaming Anime Subtitle Indonesia" itemprop="url" href="https://x3.sokuja.uk/"><img itemprop="image" src="https://gbr.sokuja.uk/logo.png" alt="SOKUJA - Download &amp; Streaming Anime Subtitle Indonesia"><span class="hdl">SOKUJA - Download &amp; Streaming Anime Subtitle Indonesia</span></a>
+			</span>
+						<span class="mobilelogo">
+			<a href="https://x3.sokuja.uk/"><img width="170" height="190" src="/wp-content/uploads/2022/08/favicon.png" alt="sokuja"></a>
+			</span>
+			<meta itemprop="name" content="SOKUJA" />
+		</div>
+	</header>
+		
+	<div data-rocket-location-hash="a352015666aae9a69a4e6e92c3837661" class="searchx minmb">
+ 		<form action="https://x3.sokuja.uk/" id="form" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+			<meta itemprop="target" content="https://x3.sokuja.uk/?s={query}"/>
+  			<input id="s" itemprop="query-input" class="search-live" type="text" placeholder="Cari Judul Anime..." name="s"/>
+			<button type="submit" id="submitsearch"><i class="fas fa-search" aria-hidden="true"></i></button>
+			<div class="srcmob srccls"><i class="fas fa-times-circle"></i></div>
+ 		</form>
+	</div>
+	<div data-rocket-location-hash="71f48b271ed2211b5e9005d713b7370d" class="srcmob"><i class="fas fa-search" aria-hidden="true"></i></div>	
+	<div data-rocket-location-hash="ab0eccb0a70e3652b2752bd51e22173c" id="thememode">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label>
+	</div>
+	<script type="rocketlazyloadscript">
+			if (localStorage.getItem("thememode") == null){
+				if (defaultTheme == "lightmode"){
+					jQuery(".logos img").attr('src', 'https://gbr.sokuja.uk/logo.png');
+					jQuery("#thememode input[type='checkbox']").prop('checked', false);
+				}else{
+					jQuery(".logos img").attr('src', 'https://gbr.sokuja.uk/logo.png');
+					jQuery("#thememode input[type='checkbox']").prop('checked', true);
+				}
+			}else if (localStorage.getItem("thememode") == "lightmode"){
+				jQuery(".logos img").attr('src', 'https://gbr.sokuja.uk/logo.png');
+				jQuery("#thememode input[type='checkbox']").prop('checked', false);
+			}else{
+				jQuery(".logos img").attr('src', 'https://gbr.sokuja.uk/logo.png');
+				jQuery("#thememode input[type='checkbox']").prop('checked', true);
+			}
+	</script>
+		</div>
+</div>
+
+<nav id="main-menu" class="mm">
+	<div class="centernav">
+		<div class="bound">
+			<span itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+				<ul id="menu-menu" class="menu"><li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a href="/" itemprop="url"><span itemprop="name">Beranda</span></a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="/anime/list-mode/" itemprop="url"><span itemprop="name">Daftar Anime</span></a></li>
+<li id="menu-item-823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-823"><a href="/anime/?type=movie&#038;order=update" itemprop="url"><span itemprop="name">Daftar Movie</span></a></li>
+<li id="menu-item-825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-825"><a href="/anime/?status=ongoing&#038;order=update" itemprop="url"><span itemprop="name">Daftar Ongoing</span></a></li>
+<li id="menu-item-824" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-824"><a href="/anime/?status=completed&#038;order=update" itemprop="url"><span itemprop="name">Daftar Completed</span></a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://x3.sokuja.uk/jadwal-rilis-anime/" itemprop="url"><span itemprop="name">Jadwal Rilis</span></a></li>
+<li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="https://x3.sokuja.uk/daftar-anime-sub-indo-yang-akan-dirilis-musim-depan/" itemprop="url"><span itemprop="name">Upcoming</span></a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://x3.sokuja.uk/bookmark/" itemprop="url"><span itemprop="name">Bookmark</span></a></li>
+<li id="menu-item-949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-949"><a href="https://x3.sokuja.uk/cara-download-anime-indo-di-sokuja/" itemprop="url"><span itemprop="name">Cara Download</span></a></li>
+<li id="menu-item-10315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10315"><a href="https://sokuja.id/" itemprop="url"><span itemprop="name">INFO</span></a></li>
+</ul>			</span>
+						<div data-rocket-location-hash="06ff5fbefc8608e79f5c9e1f71551963" class="clear"></div>
+		</div>
+	</div>
+</nav>
+
+
+<div data-rocket-location-hash="2e2c466f9d13efe8e5d76d7000cc782e" id="content">
+	<div data-rocket-location-hash="576c077741cfbb25caa5587bf7c45e38" class="wrapper">
+		<div data-rocket-location-hash="b94b369ccdfa59a225368d5e9ea056e7" class="announ"><center>JOIN TELEGRAM SOKUJA UNTUK MENDAPATKAN NOTIFIKASI RILIS, KLIK: <a href="https://t.me/sokuja">t.me/sokuja</a></center></div><div data-rocket-location-hash="e652e062810f8a520a21d7b814d053d1" class="pd-expand"></div>
+<div data-rocket-location-hash="17a686b614849abde84d5647ed72ff0d" class="postbody">
+<article id="post-10316" class="post-10316 hentry" itemscope="itemscope" itemtype="http://schema.org/Episode">
+		<div class="ts-breadcrumb bixbox">
+		<ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="https://x3.sokuja.uk/"><span itemprop="name">Beranda</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			 › 
+						<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				 <a itemprop="item" href="https://x3.sokuja.uk/anime/oshi-no-ko-subtitle-indonesia/"><span itemprop="name">&#8220;Oshi no Ko&#8221; Subtitle Indonesia</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			 › 
+			<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				 <a itemprop="item" href="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/"><span itemprop="name">(END) Oshi no Ko Episode 11 Subtitle Indonesia</span></a>
+				<meta itemprop="position" content="3">
+			</li>
+					</ol>
+	</div>	
+	<div class="megavid">
+<div class="mvelement">
+<div class="item meta">
+					<div class="tb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+					<img width="424" height="600" src="https://gbr.sokuja.uk/wp-content/uploads/2023/03/oshi_no_ko-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" />					<meta itemprop="url" content="https://gbr.sokuja.uk/wp-content/uploads/2023/03/oshi_no_ko-5.jpg">
+					<meta itemprop="width" content="190">
+					<meta itemprop="height" content="260">
+					</div>
+					<div class="lm">
+						<div class="title-section">
+							<h1 class="entry-title" itemprop="name">(END) Oshi no Ko Episode 11 Subtitle Indonesia</h1>
+						</div>
+						<meta itemprop="episodeNumber" content="11">
+						<span class="epx"> TV <span class="lg">Sub</span></span>
+						
+					<span class="year">
+														Dirilis pada <span class="updated">Juni 28, 2023</span> · 
+														Dipos Oleh <span class="vcard author"><b class="fn"><a href="https://x3.sokuja.uk/author/sokuja/">sokuja</a></b></span> · series <a href="https://x3.sokuja.uk/anime/oshi-no-ko-subtitle-indonesia/">&#8220;Oshi no Ko&#8221; Subtitle Indonesia</a>
+						</span>
+					</div>
+									<div class="sosmed">
+					<a href="https://www.facebook.com/sharer.php?u=https://sokuja.net/end-oshi-no-ko-episode-11-subtitle-indonesia/"><span class="fab fa-facebook-f" aria-hidden="true"></span></a>
+					<a href="https://twitter.com/share?url=https://sokuja.net/end-oshi-no-ko-episode-11-subtitle-indonesia/"><span class="fab fa-twitter" aria-hidden="true"></span></a>
+					<a href="whatsapp://send?text=(END) Oshi no Ko Episode 11 Subtitle Indonesia https://sokuja.net/end-oshi-no-ko-episode-11-subtitle-indonesia/"><span class="fab fa-whatsapp" aria-hidden="true"></span></a>
+				</div>
+				</div>
+<div class="announ"><center>Pilih kualitas video di bawah Video Player.</center></div>				<div class="iDd0s-4dgu4rd"><a href="https://akseskaiko.cam/login" rel="noopener nofollow"><img src="https://gbr.sokuja.id/wp-content/uploads/2026/01/Anime-kaikoslot.gif" border="0" width="826"></a>
+<a href="https://goratu.site/login" rel="noopener nofollow"><img src="https://gbr.sokuja.id/wp-content/uploads/2026/01/Anime-ratu89.gif" border="0" width="826"></a></div><br/>				<div class="JnIjkHnbcDsz">
+										<div id="OmgjLQi">
+						<div class="NhdeCy" align="center"><a id="mNG0nt0Il" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('OmgjLQi').style.display = 'none';" style="cursor:pointer;" data-cf-modified-b89dc23b5ad74440991c538d-=""><img src="https://sokuja.net/wp-content/uploads/2025/09/btn_close.jpg"/></a><br>
+						<a href="https://menujupenta.site/login" rel="noopener nofollow"><img src="https://rumahdealer.com/wp-content/uploads/2025/09/k-pent.gif" border="0"></a>						</div>
+					</div>
+					
+						<div id="embed_holder" class="lowvid"><div class="player-embed" id="pembed"><video controls preload="none" poster="/wp-content/uploads/2023/02/loading.png"><source src="https://global.nontony.uk/video2/oshi.no.ko/sokuja.net-ONK-11-480p.mp4" type="video/mp4">Browser Anda tidak mendukung HTML5, sehingga video tidak dapat diputar. harap update browser anda.</video></div></div>
+				</div>
+				<div class="item video-nav">
+					<div class="mobius">
+						<select class="mirror" name="mirror" onchange="if (!window.__cfRLUnblockHandlers) return false; loadMi(this);" data-cf-modified-b89dc23b5ad74440991c538d-="">
+		<option value="">Pilih Server & Resolusi Video</option>
+				<option value="PHZpZGVvIGNvbnRyb2xzIHByZWxvYWQ9Im5vbmUiIHBvc3Rlcj0iL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAyL2xvYWRpbmcucG5nIj48c291cmNlIHNyYz0iaHR0cHM6Ly9nbG9iYWwubm9udG9ueS51ay92aWRlbzIvb3NoaS5uby5rby9zb2t1amEubmV0LU9OSy0xMS00ODBwLm1wNCIgdHlwZT0idmlkZW8vbXA0Ij5Ccm93c2VyIEFuZGEgdGlkYWsgbWVuZHVrdW5nIEhUTUw1LCBzZWhpbmdnYSB2aWRlbyB0aWRhayBkYXBhdCBkaXB1dGFyLiBoYXJhcCB1cGRhdGUgYnJvd3NlciBhbmRhLjwvdmlkZW8+" data-index="1">
+			SOKUJA 480p		</option>
+    		<option value="PHZpZGVvIGNvbnRyb2xzIHByZWxvYWQ9Im5vbmUiIHBvc3Rlcj0iL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAyL2xvYWRpbmcucG5nIj48c291cmNlIHNyYz0iaHR0cHM6Ly9nbG9iYWwubm9udG9ueS51ay92aWRlbzIvb3NoaS5uby5rby9zb2t1amEubmV0LU9OSy0xMS03MjBwLm1wNCIgdHlwZT0idmlkZW8vbXA0Ij5Ccm93c2VyIEFuZGEgdGlkYWsgbWVuZHVrdW5nIEhUTUw1LCBzZWhpbmdnYSB2aWRlbyB0aWRhayBkYXBhdCBkaXB1dGFyLiBoYXJhcCB1cGRhdGUgYnJvd3NlciBhbmRhLjwvdmlkZW8+" data-index="2">
+			SOKUJA 720p		</option>
+    		<option value="PHZpZGVvIGNvbnRyb2xzIHByZWxvYWQ9Im5vbmUiIHBvc3Rlcj0iL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAyL2xvYWRpbmcucG5nIj48c291cmNlIHNyYz0iaHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMjMwNjI4MTYwMTQ3aWZfL2h0dHA6Ly80NS43Ni4xNDUuMTM0OjgwODAva29kZXMvc29rdWphLm5ldC1PTkstMTEtNDgwcC5tcDQiIHR5cGU9InZpZGVvL21wNCI+QnJvd3NlciBBbmRhIHRpZGFrIG1lbmR1a3VuZyBIVE1MNSwgc2VoaW5nZ2EgdmlkZW8gdGlkYWsgZGFwYXQgZGlwdXRhci4gaGFyYXAgdXBkYXRlIGJyb3dzZXIgYW5kYS48L3ZpZGVvPg==" data-index="3">
+			ARC 480p		</option>
+    		<option value="PHZpZGVvIGNvbnRyb2xzIHByZWxvYWQ9Im5vbmUiIHBvc3Rlcj0iL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAyL2xvYWRpbmcucG5nIj48c291cmNlIHNyYz0iaHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMjMwNjI4MTU1NTIxaWZfL2h0dHA6Ly80NS43Ni4xNDUuMTM0OjgwODAva29kZXMvc29rdWphLm5ldC1PTkstMTEtNzIwcC5tcDQiIHR5cGU9InZpZGVvL21wNCI+QnJvd3NlciBBbmRhIHRpZGFrIG1lbmR1a3VuZyBIVE1MNSwgc2VoaW5nZ2EgdmlkZW8gdGlkYWsgZGFwYXQgZGlwdXRhci4gaGFyYXAgdXBkYXRlIGJyb3dzZXIgYW5kYS48L3ZpZGVvPg==" data-index="4">
+			ARC 720p		</option>
+    		<option value="PGRpdiBpZD0ia3Jha2VueiI+PC9kaXY+DQo8c2NyaXB0Pg0KZnVuY3Rpb24gc29rdWphKCkgew0KICAgICAgJC5nZXQoImh0dHBzOi8va3Jha2VuZmlsZXMuY29tL2VtYmVkLXZpZGVvL3lkaEFvbEVFRHAiLCBmdW5jdGlvbihkYXRhKXsNCiAgICAgICAgICAgIHZhciByZWdleHAgPSAvPHNvdXJjZVtePl0rc3JjXHMqPVxzKlsnIl0oW14nIl0rKVsnIl1bXj5dKj4vZzsNCiAgICAgICAgICAgIHZhciBzcmMgPSBkYXRhLm1hdGNoKHJlZ2V4cCk7DQogICAgICAgICAgICB2YXIgb2sgPSAnPHZpZGVvIGNvbnRyb2xzIHByZWxvYWQ9Im5vbmUiIHBvc3Rlcj0iL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAyL2xvYWRpbmcucG5nIj4nICsgc3JjICsgJ0Jyb3dzZXIgQW5kYSB0aWRhayBtZW5kdWt1bmcgSFRNTDUsIHNlaGluZ2dhIHZpZGVvIHRpZGFrIGRhcGF0IGRpcHV0YXIuIGhhcmFwIHVwZGF0ZSBicm93c2VyIGFuZGEuPC92aWRlbz4nOw0KICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImtyYWtlbnoiKS5pbm5lckhUTUwgPSBvazsNCiAgICAgIH0pOw0KfQ0KJChkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24oKSB7IHNva3VqYSgpIH0pOw0KJCgiYm9keSxodG1sIikuYmluZCgidG91Y2hzdGFydCB0b3VjaG1vdmUgc2Nyb2xsIG1vdXNlZG93biBET01Nb3VzZVNjcm9sbCBtb3VzZXdoZWVsIGtleXVwIiwgZnVuY3Rpb24oZSl7DQogICAgICBpZiggJCgnI2tyYWtlbnonKS5pcygnOmVtcHR5JykgKSB7IHNva3VqYSgpIH07DQp9KTsNCjwvc2NyaXB0Pg==" data-index="5">
+			KF 480p		</option>
+        </select>
+						<div class="iconx">
+						<div class="icol expand"><i class="fa fa-expand" aria-hidden="true"></i> <span>Lebarkan Layar</span></div>
+						<div class="icol light"><i class="far fa-lightbulb"></i> <span>Matikan Lampu</span></div>
+											</div>
+					</div>
+				</div>
+
+<div class="naveps bignav">
+						<div class="nvs"><a href="https://x3.sokuja.uk/oshi-no-ko-episode-10-subtitle-indonesia/" rel="prev"><i class="fas fa-angle-left"></i> <span class="tex"> Sebelumnya</span></a></div>
+	<div class="nvs nvsc"><a href='https://x3.sokuja.uk/anime/oshi-no-ko-subtitle-indonesia/'><i class="fas fa-th-list"></i> <span class="tex">Daftar Episode</span></a></div>
+						<div class="nvs"><span class="nolink"><span class="tex">Selanjutnya </span> <i class="fas fa-angle-right"></i> </span></div>
+</div>
+	
+	
+	</div>
+</div>
+	<div id="mobilepisode"></div>
+	<div class="entry-content">
+	<div class="bixbox infx">
+		<p>Download <b>(END) Oshi no Ko Episode 11 Subtitle Indonesia</b>, Tonton <b>(END) Oshi no Ko Episode 11 Subtitle Indonesia (Sub Indo)</b>, jangan lupa bookmark dan bagikan anime ini ke teman kalian. Nonton Anime <b>&#8220;Oshi no Ko&#8221; Subtitle Indonesia (Sub Indo)</b> selalu terupdate di Situs SOKUJA.NET </p>
+	</div>
+		
+	<div class="bixbox">
+    <div class="releases">
+        <h3>Unduh (END) Oshi no Ko Episode 11 Subtitle Indonesia</h3>
+    </div>
+    <div class="mctnx">
+                    <div class="soraddlx soradlg">
+                <div class="sorattlx"><h3>Download Oshi no Ko Episode 11 Subtitle Indonesia</h3></div>
+                                    <div class="soraurlx">
+                        <strong>480p</strong>
+                                                <a href="https://rumahdealer.com?id=UWU2QWdsODc1dFM0UDRQZHptM251SElMaFlKalVOa05ybmVxdkZUMUI5Q3NiYnowOENISldhV1dYVGFBZTROZ0krODZUaU16TEJnK2F4clcrbVdZaVE9PQ==" target="_blank" rel="nofollow noopener noreferrer">Gofile</a>
+                                                <a href="https://rumahdealer.com?id=TEpkNG1yS3VULzhnQ3Q5VlRCcXVDOE5qZzZGY0FxYXNxLzJiS2gyakZSOXVlREg5cHZBYnN1dE51K3Q5OXJiT01PenhIWGNEcnJHZFJhSklHVnF0NjhQcXZjdHFhdlpySkdqZVNyR2JNNC9ucThtM0FPWWN0anJYcUxpdWVqQmg=" target="_blank" rel="nofollow noopener noreferrer">Krakenfiles</a>
+                                                <a href="https://rumahdealer.com?id=NFp2ZmkxTzBiNGFRZkp6VkNMZjU4dWJPV214dzl1TGVaM1V4cURYUDNldlY1Y2xjWGJielhaNGtkNi9UcVo4eVovYlBxY3QvdFRNRkVaTEp4allHSnc9PQ==" target="_blank" rel="nofollow noopener noreferrer">Mega Up</a>
+                                            </div>
+                                        <div class="soraurlx">
+                        <strong>720p</strong>
+                                                <a href="https://rumahdealer.com?id=SSsyVjFTc3JhVHRpUjVIT0ZqcU84akVsNitZbVFJV0N4V213akVwYzJJZDl5Ui9ScE9LYm1IT2V4Z0xuaGtQL1JFdlp4L1hmTTZBSCsxZ3lvQlY5V2c9PQ==" target="_blank" rel="nofollow noopener noreferrer">Gofile</a>
+                                                <a href="https://rumahdealer.com?id=OUtiWWxjME9oM21yS2dTNVBLWGJuczh2SGs1TjJTV1lHeExkRXVWYUYvTGhReGVSb25uQlpqbzVGMFNrV25UbE9jQkhZUVhuYWU2M1V0VGtPakt5dllneEpJSWhtVTJMbHAyZm5rd29SQ3B2dmNQSTZIa1JyOXh4NmpUbEozeGM=" target="_blank" rel="nofollow noopener noreferrer">Krakenfiles</a>
+                                                <a href="https://rumahdealer.com?id=aVlxOHZGaXNZbHM4NG1mSGlzYzVLdTV4UE9yQnJLQkQvRmw5QjNZeEZvZ0JwUkFSNWZIbW92b2dQb0h3dWhDdkRnQzVRUjdNQUZuUTJwNGZ3YVVxQkE9PQ==" target="_blank" rel="nofollow noopener noreferrer">Mega Up</a>
+                                            </div>
+                                <div class="sorattlx"><h3>Perangkat Apple Gunakan Safari Browser untuk mengunduh via server SOKUJA</h3></div>
+            </div>
+            </div>
+</div>
+	</div>
+	<div class="single-info bixbox">
+	<div class="thumb">
+		<img src="https://gbr.sokuja.uk/wp-content/uploads/2023/03/oshi_no_ko-5.jpg" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="&#8220;Oshi no Ko&#8221; Subtitle Indonesia" width="424" height="600"/>	</div>
+	<div class="infox">
+				<div class="infolimit">
+					<h2 itemprop="partOfSeries">&#8220;Oshi no Ko&#8221; Subtitle Indonesia</h2>
+					<span class="alter">My Star, 【Oshi no Ko】, 【推しの子】, Bintangku, Idolaku, Anak Yang Dipilih, Anak Terpilih, Anak Pilihan, oshinoko, oshino ko</span>				</div>
+								<div class="rating">
+										<strong>Rating 8.61</strong>
+					<div class="rating-prc">
+						<div class="rtp">
+							<div class="rtb"><span style="width:86.1%"></span></div>
+						</div>
+					</div>
+									</div>
+								<div class="info-content">
+				<div class="spe">
+					<span><b>Status:</b> Completed</span>										<span><b>Studio:</b> <a href="https://x3.sokuja.uk/studio/doga-kobo/" rel="tag">Doga Kobo</a></span>					<span class="split"><b>Tanggal Rilis:</b> Apr 12, 2023</span>										<span><b>Season:</b> <a href="https://x3.sokuja.uk/season/spring-2023/" rel="tag">Spring 2023</a></span>										<span><b>Tipe:</b> TV</span>					<span><b>Total Episode:</b> 11</span>					<span class="split"><b>Fansub:</b> SOKUJA.NET</span>										<span class="split"><b>Director:</b> <a href="https://x3.sokuja.uk/director/hiramaki-daisuke/" rel="tag">Hiramaki Daisuke</a></span>					<span class="split"><b>Casts:</b> <a href="https://x3.sokuja.uk/cast/han-megumi/" rel="tag">Han Megumi</a>, <a href="https://x3.sokuja.uk/cast/igoma-yurie/" rel="tag">Igoma Yurie</a>, <a href="https://x3.sokuja.uk/cast/itou-kento/" rel="tag">Itou Kento</a>, <a href="https://x3.sokuja.uk/cast/iwami-manaka/" rel="tag">Iwami Manaka</a>, <a href="https://x3.sokuja.uk/cast/lynn/" rel="tag">Lynn</a>, <a href="https://x3.sokuja.uk/cast/ookubo-rumi/" rel="tag">Ookubo Rumi</a>, <a href="https://x3.sokuja.uk/cast/ootsuka-takeo/" rel="tag">Ootsuka Takeo</a>, <a href="https://x3.sokuja.uk/cast/takahashi-rie/" rel="tag">Takahashi Rie</a>, <a href="https://x3.sokuja.uk/cast/takayanagi-tomoyo/" rel="tag">Takayanagi Tomoyo</a></span>				</div>
+				<div class="genxed"><a href="https://x3.sokuja.uk/genres/drama/" rel="tag">Drama</a> <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a> <a href="https://x3.sokuja.uk/genres/seinen/" rel="tag">Seinen</a> <a href="https://x3.sokuja.uk/genres/showbiz/" rel="tag">Showbiz</a> <a href="https://x3.sokuja.uk/genres/supernatural/" rel="tag">Supernatural</a></div>									<div class="desc mindes">
+						【Oshi No Ko】Ai Hoshino yang berusia enam belas tahun adalah idola berbakat dan cantik yang dipuja oleh para penggemarnya. Dia adalah personifikasi dari gadis muda yang murni. Tapi semua yang berkilau itu bukanlah emas. <strong>oshinoko</strong>
+
+Gorou Amemiya adalah seorang ginekolog pedesaan dan penggemar berat Ai. Jadi ketika idola yang sedang hamil itu muncul di rumah sakitnya, dia sangat bingung. Gorou menjanjikannya pengiriman yang aman. Sedikit yang dia tahu, pertemuan dengan sosok misterius akan mengakibatkan kematiannya sebelum waktunya — atau begitulah yang dia pikirkan.
+
+Membuka matanya di pangkuan idola kesayangannya, Gorou menemukan bahwa dia telah terlahir kembali sebagai Aquamarine Hoshino—Ai's anak laki-laki yang baru lahir! Dengan dunianya yang terbalik, Gorou segera mengetahui bahwa dunia showbiz diaspal dengan duri, di mana bakat tidak selalu menghasilkan kesuksesan. Akankah dia berhasil melindungi senyum Ai yang sangat dia cintai dengan bantuan sekutu yang eksentrik dan tak terduga?
+
+Lanjutan Cerita Season 2: <a href="https://sokuja.net/anime/oshi-no-ko-season-2-subtitle-indonesia/">Oshi no Ko Season 2 Subtitle Indonesia</a>						<span class="colap"></span>
+					</div>
+								</div>
+			</div>
+</div>
+				<div class="bixbox">
+				<div class="releases"><h3><span>Rekomendasi Anime Series</span></h3></div>
+				<div class="listupd">
+				<article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://x3.sokuja.uk/anime/mushoku-tensei-isekai-ittara-honki-dasu-season-2-subtitle-indonesia/" itemprop="url" title="Mushoku Tensei: Isekai Ittara Honki Dasu Season 2 Subtitle Indonesia" class="tip" rel="9618">
+		<div class="limit">
+			<div class="status Completed">Completed</div>						<div class="typez TV">TV</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Completed</span>
+							</div>
+			<img src="https://gbr.sokuja.uk/wp-content/uploads/2023/06/mushoku-s2-3.jpg" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Mushoku Tensei: Isekai Ittara Honki Dasu Season 2 Subtitle Indonesia" width="426" height="600"/>		</div>
+			<div class="tt">
+				Mushoku Tensei: Isekai Ittara Honki Dasu Season 2 Subtitle Indonesia				<h2 itemprop="headline">Mushoku Tensei: Isekai Ittara Honki Dasu Season 2 Subtitle Indonesia</h2>
+			</div>
+		</a>
+	</div>
+</article><article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://x3.sokuja.uk/anime/mushoku-tensei-isekai-ittara-honki-dasu-season-2-part-2-subtitle-indonesia/" itemprop="url" title="Mushoku Tensei: Isekai Ittara Honki Dasu Season 2 Part 2 Subtitle Indonesia" class="tip" rel="15054">
+		<div class="limit">
+			<div class="status Completed">Completed</div>						<div class="typez TV">TV</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Completed</span>
+							</div>
+			<img src="https://gbr.sokuja.uk/wp-content/uploads/2024/02/Mushoku-Tensei-II-Isekai-Ittara-Honki-Dasu-Part-2-.jpg" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Mushoku Tensei: Isekai Ittara Honki Dasu Season 2 Part 2 Subtitle Indonesia" width="426" height="600"/>		</div>
+			<div class="tt">
+				Mushoku Tensei: Isekai Ittara Honki Dasu Season 2 Part 2 Subtitle Indonesia				<h2 itemprop="headline">Mushoku Tensei: Isekai Ittara Honki Dasu Season 2 Part 2 Subtitle Indonesia</h2>
+			</div>
+		</a>
+	</div>
+</article><article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://x3.sokuja.uk/anime/oshi-no-ko-season-2-subtitle-indonesia/" itemprop="url" title="Oshi no Ko Season 2 Subtitle Indonesia" class="tip" rel="16829">
+		<div class="limit">
+			<div class="status Completed">Completed</div>						<div class="typez TV">TV</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Completed</span>
+							</div>
+			<img src="https://gbr.sokuja.uk/wp-content/uploads/2024/05/SOKUJA-Oshi_no_Ko_Season_2-.jpg" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Oshi no Ko Season 2 Subtitle Indonesia" width="425" height="600"/>		</div>
+			<div class="tt">
+				Oshi no Ko Season 2 Subtitle Indonesia				<h2 itemprop="headline">Oshi no Ko Season 2 Subtitle Indonesia</h2>
+			</div>
+		</a>
+	</div>
+</article><article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://x3.sokuja.uk/anime/mushoku-tensei-isekai-ittara-honki-dasu-part-2-subtitle-indonesia/" itemprop="url" title="Mushoku Tensei: Isekai Ittara Honki Dasu part 2 Subtitle Indonesia" class="tip" rel="1634">
+		<div class="limit">
+			<div class="status Completed">Completed</div>						<div class="typez TV">TV</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Completed</span>
+							</div>
+			<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/08/1661940770-2259-117777.jpg" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Mushoku Tensei: Isekai Ittara Honki Dasu part 2 Subtitle Indonesia" width="225" height="318"/>		</div>
+			<div class="tt">
+				Mushoku Tensei: Isekai Ittara Honki Dasu part 2 Subtitle Indonesia				<h2 itemprop="headline">Mushoku Tensei: Isekai Ittara Honki Dasu part 2 Subtitle Indonesia</h2>
+			</div>
+		</a>
+	</div>
+</article><article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://x3.sokuja.uk/anime/mushoku-tensei-isekai-ittara-honki-dasu-subtitle-indonesia/" itemprop="url" title="Mushoku Tensei: Isekai Ittara Honki Dasu Subtitle Indonesia" class="tip" rel="1631">
+		<div class="limit">
+			<div class="status Completed">Completed</div>						<div class="typez TV">TV</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Completed</span>
+							</div>
+			<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/08/1661940270-2763-117776.jpg" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Mushoku Tensei: Isekai Ittara Honki Dasu Subtitle Indonesia" width="225" height="318"/>		</div>
+			<div class="tt">
+				Mushoku Tensei: Isekai Ittara Honki Dasu Subtitle Indonesia				<h2 itemprop="headline">Mushoku Tensei: Isekai Ittara Honki Dasu Subtitle Indonesia</h2>
+			</div>
+		</a>
+	</div>
+</article>				</div>
+		</div>
+			<div class="bixbox">
+		<div class="releases"><h3><span>👇 Komentar Netijen :v (Mencari Jadwal Rilis? Klik disini: <a href='https://sokuja.net/jadwal-rilis-anime/'>Jadwal Rilis SOKUJA</a>)</span></h3></div>
+		<div class="cmt commentx">
+									
+    	
+        <ol class="comment-list">
+            		<li class="comment even thread-even depth-1" id="comment-4230">
+				<div id="div-comment-4230" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/d0109c5d69c1cc31d593e9cfb89943729b59a96bf00a5ed3259f50aa135af92b?s=74&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/d0109c5d69c1cc31d593e9cfb89943729b59a96bf00a5ed3259f50aa135af92b?s=148&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' decoding='async'/>			<cite class="fn">eldo</cite> <span class="says">berkata:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#comment-4230">22 April 2024 pukul 22:23</a>		</div>
+
+		<p>njirr s2</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-4230" data-commentid="4230" data-postid="10316" data-belowelement="div-comment-4230" data-respondelement="respond" data-replyto="Balasan untuk eldo" aria-label="Balasan untuk eldo">Balas</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-2601">
+				<div id="div-comment-2601" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/e3c1e48f24163a0329d6a40a9fc65a4147de756a4916e3a11206d9987e32b738?s=74&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/e3c1e48f24163a0329d6a40a9fc65a4147de756a4916e3a11206d9987e32b738?s=148&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' decoding='async'/>			<cite class="fn"><a href="https://heru.com" class="url" rel="ugc external nofollow">heru</a></cite> <span class="says">berkata:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#comment-2601">8 November 2023 pukul 18:59</a>		</div>
+
+		<p>seru</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-2601" data-commentid="2601" data-postid="10316" data-belowelement="div-comment-2601" data-respondelement="respond" data-replyto="Balasan untuk heru" aria-label="Balasan untuk heru">Balas</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1835">
+				<div id="div-comment-1835" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/c26e212377e3a5e3194a11cb8e7570ab131debf65a6f7c67cab43cf30f69b428?s=74&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/c26e212377e3a5e3194a11cb8e7570ab131debf65a6f7c67cab43cf30f69b428?s=148&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' loading='lazy' decoding='async'/>			<cite class="fn">richo gemma</cite> <span class="says">berkata:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#comment-1835">18 Juli 2023 pukul 20:31</a>		</div>
+
+		<p>semoga s2 oshi no ko.<br />
+bisa dipercepat rilis nya.<br />
+aku udah gak sabar s2 nya 😀</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-1835" data-commentid="1835" data-postid="10316" data-belowelement="div-comment-1835" data-respondelement="respond" data-replyto="Balasan untuk richo gemma" aria-label="Balasan untuk richo gemma">Balas</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1734">
+				<div id="div-comment-1734" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/6e9248cbebc5ac324b053d1a2fddf59ec913eaaab9bae1d24d02f6275106437e?s=74&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/6e9248cbebc5ac324b053d1a2fddf59ec913eaaab9bae1d24d02f6275106437e?s=148&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' loading='lazy' decoding='async'/>			<cite class="fn">Hasnaah</cite> <span class="says">berkata:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#comment-1734">2 Juli 2023 pukul 12:02</a>		</div>
+
+		<p>Yahhhh udah endd</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-1734" data-commentid="1734" data-postid="10316" data-belowelement="div-comment-1734" data-respondelement="respond" data-replyto="Balasan untuk Hasnaah" aria-label="Balasan untuk Hasnaah">Balas</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1724">
+				<div id="div-comment-1724" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/99396d09b57d1ee5ddf3824e2cb08fd4a93089c39736ac840c26b90ebab24899?s=74&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/99396d09b57d1ee5ddf3824e2cb08fd4a93089c39736ac840c26b90ebab24899?s=148&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' loading='lazy' decoding='async'/>			<cite class="fn"><a href="http://sokuja" class="url" rel="ugc external nofollow">RANZ_D_SINI</a></cite> <span class="says">berkata:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/#comment-1724">30 Juni 2023 pukul 21:44</a>		</div>
+
+		<p>gak sabar nunggu season 2 nya</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-1724" data-commentid="1724" data-postid="10316" data-belowelement="div-comment-1724" data-respondelement="respond" data-replyto="Balasan untuk RANZ_D_SINI" aria-label="Balasan untuk RANZ_D_SINI">Balas</a></div>
+				</div>
+				</li><!-- #comment-## -->
+        </ol><!-- .comment-list -->
+ 
+         
+         
+     
+    	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Tinggalkan Balasan <small><a rel="nofollow" id="cancel-comment-reply-link" href="/end-oshi-no-ko-episode-11-subtitle-indonesia/#respond" style="display:none;">Batalkan balasan</a></small></h3><form action="https://x3.sokuja.uk/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Alamat email Anda tidak akan dipublikasikan.</span> <span class="required-field-message">Ruas yang wajib ditandai <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Komentar <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Nama <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Situs Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Simpan nama, email, dan situs web saya pada peramban ini untuk komentar saya berikutnya.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Kirim Komentar" /> <input type='hidden' name='comment_post_ID' value='10316' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+						 </div>
+	</div>
+	
+	<meta itemprop="author" content="admin">
+	<meta itemprop="datePublished" content="2023-06-28T23:00:38+07:00">
+	<meta itemprop="dateModified" content="2023-07-08T06:35:39+07:00">
+	<span style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+		<span style="display: none;" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+			<meta itemprop="url" content="https://gbr.sokuja.uk/logo.png">
+		</span>
+		<meta itemprop="name" content="SOKUJA">
+	</span>
+	</article>
+</div>
+<div data-rocket-location-hash="2378ceacb910ed39b1eaae04f71ac1ff" id="sidebar">
+	        <div id="mainepisode">
+        
+<div id="singlepisode">
+    <div class="headlist">
+        <div class="thumb">
+            <a href="https://x3.sokuja.uk/anime/oshi-no-ko-subtitle-indonesia/"><img src="https://gbr.sokuja.uk/wp-content/uploads/2023/03/oshi_no_ko-5-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/></a>
+        </div>
+        <div class="det">
+            <h3><a href="https://x3.sokuja.uk/anime/oshi-no-ko-subtitle-indonesia/">&#8220;Oshi no Ko&#8221; Subtitle Indonesia</a></h3>
+            <span><i>Completed</i> - <em class="epnow">?</em> / 11</span>
+        </div>
+    </div>
+    <div class="episodelist">
+        <ul>
+
+                            <li data-id="10316">
+                    <a href="https://x3.sokuja.uk/end-oshi-no-ko-episode-11-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/06/oshi-no-ko-11-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="(END) Oshi no Ko Episode 11 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>(END) Oshi no Ko Episode 11 Subtitle Indonesia</h4>
+                            <span>Eps 11 - (END) Oshi no Ko Episode 11 Subtitle Indonesia - Juni 28, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="10199">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-10-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/06/oshi-no-ko-10-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 10 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 10 Subtitle Indonesia</h4>
+                            <span>Eps 10 - Oshi no Ko Episode 10 Subtitle Indonesia - Juni 21, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="10016">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-9-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/06/oshi-no-ko-9-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 9 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 9 Subtitle Indonesia</h4>
+                            <span>Eps 9 - Oshi no Ko Episode 9 Subtitle Indonesia - Juni 14, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="9551">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-8-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/06/vlcsnap-2023-06-07-22h20m58s239-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 8 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 8 Subtitle Indonesia</h4>
+                            <span>Eps 8 - Oshi no Ko Episode 8 Subtitle Indonesia - Juni 7, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="9354">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-7-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/05/oshi-7-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 7 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 7 Subtitle Indonesia</h4>
+                            <span>Eps 7 - Oshi no Ko Episode 7 Subtitle Indonesia - Mei 24, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="9172">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-6-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/05/onk-6-267x150.png" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 6 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 6 Subtitle Indonesia</h4>
+                            <span>Eps 6 - Oshi no Ko Episode 6 Subtitle Indonesia - Mei 18, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="9015">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-5-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/05/oshi-no-ko-5-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 5 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 5 Subtitle Indonesia</h4>
+                            <span>Eps 5 - Oshi no Ko Episode 5 Subtitle Indonesia - Mei 10, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="8842">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-4-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/05/oshinoko-4-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 4 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 4 Subtitle Indonesia</h4>
+                            <span>Eps 4 - Oshi no Ko Episode 4 Subtitle Indonesia - Mei 3, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="8606">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-3-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/04/vlcsnap-2023-04-26-22h43m57s846-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 3 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 3 Subtitle Indonesia</h4>
+                            <span>Eps 3 - Oshi no Ko Episode 3 Subtitle Indonesia - April 26, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="8481">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-2-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/04/oshinoko-2-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 2 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 2 Subtitle Indonesia</h4>
+                            <span>Eps 2 - Oshi no Ko Episode 2 Subtitle Indonesia - April 19, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="8370">
+                    <a href="https://x3.sokuja.uk/oshi-no-ko-episode-1-subtitle-indonesia/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://gbr.sokuja.uk/wp-content/uploads/2023/04/vlcsnap-2023-04-12-23h47m34s333-267x150.jpg" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Oshi no Ko Episode 1 Subtitle Indonesia" width="267" height="150"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Oshi no Ko Episode 1 Subtitle Indonesia</h4>
+                            <span>Eps 1 - Oshi no Ko Episode 1 Subtitle Indonesia - April 13, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                        
+        </ul>
+    </div>
+</div>            
+                        <script type="rocketlazyloadscript">
+                var tsMediaSelectedId = 10316;
+                var tsMediaEpNow = "11";
+                tsMedia(tsmmedia);
+                tsMediaPickList();
+            </script>
+        </div>
+        	<div class="widget_text section"><div class="releases"><h3>Media Sosial</h3></div><div class="textwidget custom-html-widget"><style>
+.slebew{
+	text-align:center;
+	background:#c00;
+	font-size:13px;
+	color:#FFF;
+	border-radius:5px;
+	padding:8px 5px;
+	display:block;
+	margin-bottom:6px
+}
+.slebew:hover{
+	background:#b20c0c;
+	color:#FFF !important;
+}
+.fesbuq{
+	text-align:center;
+	background:#0c70de;
+	font-size:13px;
+	color:#FFF;
+	border-radius:5px;
+	padding:8px 5px;
+	display:block;
+	margin-bottom:6px
+}
+.fesbuq:hover{
+	background:#2f477b;
+	color:#FFF !important;
+}
+.tele{
+	text-align:center;
+	background:#3390ec;
+	font-size:13px;
+	color:#FFF;
+	border-radius:5px;
+	padding:8px 5px;
+	display:block;
+	margin-bottom:6px
+}
+.tele:hover{
+	background:#2f477b;
+	color:#FFF !important;
+}
+</style>
+<a href="https://t.me/sokuja" target="_blank" rel="noopener" class="tele">
+<i class="fab fa-telegram"></i> TELEGRAM </a>
+<a href="https://www.youtube.com/@sokuja2188/featured" target="_blank" rel="noopener" class="slebew">
+<i class="fab fa-youtube"></i> YOUTUBE </a>
+<a href="https://www.facebook.com/Sokuja-102377075939318" target="_blank" rel="noopener" class="fesbuq">
+<i class="fab fa-facebook-f"></i> FACEBOOK </a></div></div><div class="section"><div class="releases"><h3>Anime Populer</h3></div>
+<div class="ts-wpop-series-gen">
+	<ul class="ts-wpop-nav-tabs">
+		<li class="active"><a class="ts-wpop-tab" data-range="weekly">Mingguan</a></li>
+		<li><a  class="ts-wpop-tab" data-range="monthly">Bulanan</a></li>
+		<li><a  class="ts-wpop-tab" data-range="alltime">Semua</a></li>
+	</ul>
+</div>
+
+	<div id="wpop-items">
+	<div class='serieslist pop wpop wpop-weekly'>
+		<ul>
+							<li>
+					<div class="ctr">1</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/jujutsu-kaisen-the-culling-game-part-1-subtitle-indonesia/" rel="25102">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2025/11/jujutsu-kaisen-the-culling-game-part-1-subtitle-indonesia--212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/jujutsu-kaisen-the-culling-game-part-1-subtitle-indonesia/" rel="25102">Jujutsu Kaisen : The Culling Game Part 1 Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/curse-exorcism/" rel="tag">Curse Exorcism</a>, <a href="https://x3.sokuja.uk/genres/dark-fantasy/" rel="tag">Dark Fantasy</a>, <a href="https://x3.sokuja.uk/genres/mystery/" rel="tag">Mystery</a>, <a href="https://x3.sokuja.uk/genres/school/" rel="tag">School</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a>, <a href="https://x3.sokuja.uk/genres/supernatural/" rel="tag">Supernatural</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:81.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.17</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">2</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/yuusha-party-wo-oidasareta-kiyoubinbou-subtitle-indonesia/" rel="25594">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Yuusha_Party_wo_Oidasareta_Kiyoubinbou_-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/yuusha-party-wo-oidasareta-kiyoubinbou-subtitle-indonesia/" rel="25594">Yuusha Party wo Oidasareta Kiyoubinbou Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">3</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/jigokuraku-season-2-subtitle-indonesia/" rel="25100">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2025/11/jigokuraku-season-2-subtitle-indonesia-213x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="213" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/jigokuraku-season-2-subtitle-indonesia/" rel="25100">Jigokuraku Season 2 Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/dark-fantasy/" rel="tag">Dark Fantasy</a>, <a href="https://x3.sokuja.uk/genres/gore/" rel="tag">Gore</a>, <a href="https://x3.sokuja.uk/genres/historical/" rel="tag">Historical</a>, <a href="https://x3.sokuja.uk/genres/psychological-thriller/" rel="tag">Psychological Thriller</a>, <a href="https://x3.sokuja.uk/genres/samurai/" rel="tag">Samurai</a>, <a href="https://x3.sokuja.uk/genres/shonen/" rel="tag">Shōnen</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a>, <a href="https://x3.sokuja.uk/genres/supernatural/" rel="tag">Supernatural</a>, <a href="https://x3.sokuja.uk/genres/survival/" rel="tag">Survival</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.67</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">4</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/hell-mode-yarikomizuki-no-gamer-wa-hai-settei-no-isekai-de-musou-suru-subtitle-indonesia/" rel="25687">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Hell_Mode__Yarikomizuki_no_Gamer_wa_Hai_Settei_no_Isekai_de_Musou_suru-2-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/hell-mode-yarikomizuki-no-gamer-wa-hai-settei-no-isekai-de-musou-suru-subtitle-indonesia/" rel="25687">Hell Mode: Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/isekai/" rel="tag">Isekai</a>, <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.2%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.52</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">5</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/yuusha-kei-ni-shosu-choubatsu-yuusha-9004-tai-keimu-kiroku-subtitle-indonesia/" rel="25197">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2025/12/Yuusha-kei_ni_Shosu__Choubatsu_Yuusha_9004-tai_Keimu_Kiroku-1-213x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="213" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/yuusha-kei-ni-shosu-choubatsu-yuusha-9004-tai-keimu-kiroku-subtitle-indonesia/" rel="25197">Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/comedy/" rel="tag">Comedy</a>, <a href="https://x3.sokuja.uk/genres/dark-humor/" rel="tag">Dark Humor</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/hero-unit/" rel="tag">Hero Unit</a>, <a href="https://x3.sokuja.uk/genres/parody/" rel="tag">Parody</a>, <a href="https://x3.sokuja.uk/genres/prison/" rel="tag">Prison</a>, <a href="https://x3.sokuja.uk/genres/supernatural/" rel="tag">Supernatural</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.67</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">6</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/kizoku-tensei-megumareta-umare-kara-saikyou-no-chikara-wo-eru-subtitle-indonesia/" rel="25674">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Kizoku_Tensei__Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru-3-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/kizoku-tensei-megumareta-umare-kara-saikyou-no-chikara-wo-eru-subtitle-indonesia/" rel="25674">Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.67</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">7</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/majutsushi-kunon-wa-mieteiru-subtitle-indonesia/" rel="25662">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Majutsushi_Kunon_wa_Mieteiru-3-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/majutsushi-kunon-wa-mieteiru-subtitle-indonesia/" rel="25662">Majutsushi Kunon wa Mieteiru Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">8</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/one-piece-subtitle-indonesia/" rel="363">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/08/sokuja-one-piece-indo-193x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="193" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/one-piece-subtitle-indonesia/" rel="363">One Piece Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:87.2%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.72</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">9</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/omae-gotoki-ga-maou-ni-kateru-to-omouna-to-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai-subtitle-indonesia/" rel="25754">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omouna_to_Yuusha_Party_wo_Tsuihou_sareta_node_Outo_de_Kimama_ni_Kurashitai-2-203x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="203" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/omae-gotoki-ga-maou-ni-kateru-to-omouna-to-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai-subtitle-indonesia/" rel="25754">&quot;Omae Gotoki ga Maou ni Kateru to Omouna&quot; to Yuusha Party wo Tsuihou sareta node, Outo de Kimama ni Kurashitai Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/girls-love/" rel="tag">Girls Love</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">10</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/yuusha-party-ni-kawaii-ko-ga-ita-node-kokuhaku-shitemita-subtitle-indonesia/" rel="25593">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_node_Kokuhaku_shitemita-2-213x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="213" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/yuusha-party-ni-kawaii-ko-ga-ita-node-kokuhaku-shitemita-subtitle-indonesia/" rel="25593">Yuusha Party ni Kawaii Ko ga Ita node, Kokuhaku shitemita Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/comedy/" rel="tag">Comedy</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/isekai/" rel="tag">Isekai</a>, <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a>, <a href="https://x3.sokuja.uk/genres/romance/" rel="tag">Romance</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+					</ul>
+	</div>
+
+
+	<div class='serieslist pop wpop wpop-monthly'>
+		<ul>
+							<li>
+					<div class="ctr">1</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/jujutsu-kaisen-the-culling-game-part-1-subtitle-indonesia/" rel="25102">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2025/11/jujutsu-kaisen-the-culling-game-part-1-subtitle-indonesia--212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/jujutsu-kaisen-the-culling-game-part-1-subtitle-indonesia/" rel="25102">Jujutsu Kaisen : The Culling Game Part 1 Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/curse-exorcism/" rel="tag">Curse Exorcism</a>, <a href="https://x3.sokuja.uk/genres/dark-fantasy/" rel="tag">Dark Fantasy</a>, <a href="https://x3.sokuja.uk/genres/mystery/" rel="tag">Mystery</a>, <a href="https://x3.sokuja.uk/genres/school/" rel="tag">School</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a>, <a href="https://x3.sokuja.uk/genres/supernatural/" rel="tag">Supernatural</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:81.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.17</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">2</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/hell-mode-yarikomizuki-no-gamer-wa-hai-settei-no-isekai-de-musou-suru-subtitle-indonesia/" rel="25687">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Hell_Mode__Yarikomizuki_no_Gamer_wa_Hai_Settei_no_Isekai_de_Musou_suru-2-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/hell-mode-yarikomizuki-no-gamer-wa-hai-settei-no-isekai-de-musou-suru-subtitle-indonesia/" rel="25687">Hell Mode: Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/isekai/" rel="tag">Isekai</a>, <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.2%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.52</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">3</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/yuusha-party-wo-oidasareta-kiyoubinbou-subtitle-indonesia/" rel="25594">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Yuusha_Party_wo_Oidasareta_Kiyoubinbou_-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/yuusha-party-wo-oidasareta-kiyoubinbou-subtitle-indonesia/" rel="25594">Yuusha Party wo Oidasareta Kiyoubinbou Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">4</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/jigokuraku-season-2-subtitle-indonesia/" rel="25100">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2025/11/jigokuraku-season-2-subtitle-indonesia-213x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="213" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/jigokuraku-season-2-subtitle-indonesia/" rel="25100">Jigokuraku Season 2 Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/dark-fantasy/" rel="tag">Dark Fantasy</a>, <a href="https://x3.sokuja.uk/genres/gore/" rel="tag">Gore</a>, <a href="https://x3.sokuja.uk/genres/historical/" rel="tag">Historical</a>, <a href="https://x3.sokuja.uk/genres/psychological-thriller/" rel="tag">Psychological Thriller</a>, <a href="https://x3.sokuja.uk/genres/samurai/" rel="tag">Samurai</a>, <a href="https://x3.sokuja.uk/genres/shonen/" rel="tag">Shōnen</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a>, <a href="https://x3.sokuja.uk/genres/supernatural/" rel="tag">Supernatural</a>, <a href="https://x3.sokuja.uk/genres/survival/" rel="tag">Survival</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.67</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">5</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/yuusha-kei-ni-shosu-choubatsu-yuusha-9004-tai-keimu-kiroku-subtitle-indonesia/" rel="25197">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2025/12/Yuusha-kei_ni_Shosu__Choubatsu_Yuusha_9004-tai_Keimu_Kiroku-1-213x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="213" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/yuusha-kei-ni-shosu-choubatsu-yuusha-9004-tai-keimu-kiroku-subtitle-indonesia/" rel="25197">Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/comedy/" rel="tag">Comedy</a>, <a href="https://x3.sokuja.uk/genres/dark-humor/" rel="tag">Dark Humor</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/hero-unit/" rel="tag">Hero Unit</a>, <a href="https://x3.sokuja.uk/genres/parody/" rel="tag">Parody</a>, <a href="https://x3.sokuja.uk/genres/prison/" rel="tag">Prison</a>, <a href="https://x3.sokuja.uk/genres/supernatural/" rel="tag">Supernatural</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.67</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">6</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/kizoku-tensei-megumareta-umare-kara-saikyou-no-chikara-wo-eru-subtitle-indonesia/" rel="25674">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Kizoku_Tensei__Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru-3-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/kizoku-tensei-megumareta-umare-kara-saikyou-no-chikara-wo-eru-subtitle-indonesia/" rel="25674">Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.67</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">7</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/majutsushi-kunon-wa-mieteiru-subtitle-indonesia/" rel="25662">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Majutsushi_Kunon_wa_Mieteiru-3-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/majutsushi-kunon-wa-mieteiru-subtitle-indonesia/" rel="25662">Majutsushi Kunon wa Mieteiru Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">8</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/yuusha-party-ni-kawaii-ko-ga-ita-node-kokuhaku-shitemita-subtitle-indonesia/" rel="25593">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_node_Kokuhaku_shitemita-2-213x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="213" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/yuusha-party-ni-kawaii-ko-ga-ita-node-kokuhaku-shitemita-subtitle-indonesia/" rel="25593">Yuusha Party ni Kawaii Ko ga Ita node, Kokuhaku shitemita Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/comedy/" rel="tag">Comedy</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/isekai/" rel="tag">Isekai</a>, <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a>, <a href="https://x3.sokuja.uk/genres/romance/" rel="tag">Romance</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">9</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/one-piece-subtitle-indonesia/" rel="363">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/08/sokuja-one-piece-indo-193x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="193" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/one-piece-subtitle-indonesia/" rel="363">One Piece Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:87.2%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.72</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">10</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/omae-gotoki-ga-maou-ni-kateru-to-omouna-to-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai-subtitle-indonesia/" rel="25754">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2026/01/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omouna_to_Yuusha_Party_wo_Tsuihou_sareta_node_Outo_de_Kimama_ni_Kurashitai-2-203x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="203" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/omae-gotoki-ga-maou-ni-kateru-to-omouna-to-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai-subtitle-indonesia/" rel="25754">&quot;Omae Gotoki ga Maou ni Kateru to Omouna&quot; to Yuusha Party wo Tsuihou sareta node, Outo de Kimama ni Kurashitai Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/girls-love/" rel="tag">Girls Love</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+					</ul>
+	</div>
+
+
+	<div class='serieslist pop wpop wpop-alltime'>
+		<ul>
+							<li>
+					<div class="ctr">1</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/one-piece-subtitle-indonesia/" rel="363">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/08/sokuja-one-piece-indo-193x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="193" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/one-piece-subtitle-indonesia/" rel="363">One Piece Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:87.2%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.72</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">2</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/kimetsu-no-yaiba-katanakaji-no-sato-hen-season-4-subtitle-indonesia/" rel="6627">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2023/02/kimetsu.no_.yaiba_.s3.arc_.swordsmith.village-213x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="213" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/kimetsu-no-yaiba-katanakaji-no-sato-hen-season-4-subtitle-indonesia/" rel="6627">Kimetsu no Yaiba: Katanakaji no Sato-hen Season 4 Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/historical/" rel="tag">Historical</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:82.1%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.21</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">3</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/tokyo-revengers-seiya-kessen-hen-season-2-subtitle-indonesia/" rel="5608">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/12/tokyo-revenger-s2.-210x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="210" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/tokyo-revengers-seiya-kessen-hen-season-2-subtitle-indonesia/" rel="5608">Tokyo Revengers: Seiya Kessen-hen Season 2 Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/delinquents/" rel="tag">Delinquents</a>, <a href="https://x3.sokuja.uk/genres/drama/" rel="tag">Drama</a>, <a href="https://x3.sokuja.uk/genres/school/" rel="tag">School</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a>, <a href="https://x3.sokuja.uk/genres/supernatural/" rel="tag">Supernatural</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.5%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.65</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">4</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/tensei-shitara-slime-datta-ken-movie-guren-no-kizuna-hen-subtitle-indonesia/" rel="4943">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/11/Tensei_shitara_Slime_Datta_Ken_Movie__Guren_no_Kizuna-hen-1-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/tensei-shitara-slime-datta-ken-movie-guren-no-kizuna-hen-subtitle-indonesia/" rel="4943">Tensei shitara Slime Datta Ken Movie: Guren no Kizuna-hen Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/comedy/" rel="tag">Comedy</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/isekai/" rel="tag">Isekai</a>, <a href="https://x3.sokuja.uk/genres/mythology/" rel="tag">Mythology</a>, <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.3%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.63</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">5</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/kage-no-jitsuryokusha-ni-naritakute-subtitle-indonesia/" rel="3657">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/10/sokuja-kage-no-jitsuryokusha-naritakute-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/kage-no-jitsuryokusha-ni-naritakute-subtitle-indonesia/" rel="3657">Kage no Jitsuryokusha ni Naritakute Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/comedy/" rel="tag">Comedy</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/isekai/" rel="tag">Isekai</a>, <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:82.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.27</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">6</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/isekai-de-cheat-skill-wo-te-ni-shita-ore-wa-genjitsu-sekai-wo-mo-musou-suru-level-up-wa-jinsei-wo-kaeta-subtitle-indonesia/" rel="7319">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2023/03/isekaidecheatskill-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/isekai-de-cheat-skill-wo-te-ni-shita-ore-wa-genjitsu-sekai-wo-mo-musou-suru-level-up-wa-jinsei-wo-kaeta-subtitle-indonesia/" rel="7319">Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/isekai/" rel="tag">Isekai</a>, <a href="https://x3.sokuja.uk/genres/school/" rel="tag">School</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:63.4%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">6.34</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">7</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/black-clover-subtitle-indonesia/" rel="3809">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/10/sokuja-black-clover-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/black-clover-subtitle-indonesia/" rel="3809">Black Clover Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/comedy/" rel="tag">Comedy</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:81.4%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.14</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">8</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/tensei-kizoku-no-isekai-boukenroku-jichou-wo-shiranai-kamigami-no-shito-subtitle-indonesia/" rel="7324">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2023/03/Tensei_Kizoku_no_Isekai_Boukenroku-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/tensei-kizoku-no-isekai-boukenroku-jichou-wo-shiranai-kamigami-no-shito-subtitle-indonesia/" rel="7324">Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/harem/" rel="tag">Harem</a>, <a href="https://x3.sokuja.uk/genres/isekai/" rel="tag">Isekai</a>, <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a>, <a href="https://x3.sokuja.uk/genres/romance/" rel="tag">Romance</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:66.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">6.67</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">9</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/saikyou-onmyouji-no-isekai-tenseiki-subtitle-indonesia/" rel="5925">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2023/01/saikyou-onmyouji-no-isekai-tenseiki-subtitle-indonesia-215x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="215" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/saikyou-onmyouji-no-isekai-tenseiki-subtitle-indonesia/" rel="5925">Saikyou Onmyouji no Isekai Tenseiki Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/action/" rel="tag">Action</a>, <a href="https://x3.sokuja.uk/genres/adventure/" rel="tag">Adventure</a>, <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:71.3%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.13</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">10</div>
+					<div class="imgseries">
+						<a class="series" href="https://x3.sokuja.uk/anime/isekai-nonbiri-nouka-subtitle-indonesia/" rel="5929">
+							<img src="https://gbr.sokuja.uk/wp-content/uploads/2022/12/isekai.nonbiri.nouka1_-212x300.jpg" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="212" height="300"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://x3.sokuja.uk/anime/isekai-nonbiri-nouka-subtitle-indonesia/" rel="5929">Isekai Nonbiri Nouka Subtitle Indonesia</a>
+						</h4>
+						<span><b>Genre</b>: <a href="https://x3.sokuja.uk/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://x3.sokuja.uk/genres/harem/" rel="tag">Harem</a>, <a href="https://x3.sokuja.uk/genres/isekai/" rel="tag">Isekai</a>, <a href="https://x3.sokuja.uk/genres/reincarnation/" rel="tag">Reincarnation</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.5%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.55</div>
+							</div>
+						</div>
+											</div>
+				</li>
+					</ul>
+	</div>
+</div>
+</div><script type="rocketlazyloadscript">ts_popular_widget.run(1770819955);</script>
+<div class="section"><div class="releases"><h3>Anime Ongoing (Airing)</h3></div><div class='ongoingseries'><ul>
+<li>
+    <a href="https://x3.sokuja.uk/29-sai-dokushin-chuuken-boukensha-no-nichijou-episode-6-subtitle-indonesia/" title="29-sai Dokushin Chuuken Boukensha no Nichijou Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> 29-sai Dokushin Chuuken Boukensha no Nichijou Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/easygoing-territory-defense-by-the-optimistic-lord-episode-6-subtitle-indonesia/" title="Easygoing Territory Defense by the Optimistic Lord Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Okiraku Ryoushu no Tanoshii Ryouchi Bouei: Seisankei Majutsu de Na mo Naki Mura wo Saikyou no Jousai Toshi ni Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/the-darwin-incident-episode-6-subtitle-indonesia/" title="The Darwin Incident Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Darwin Jihen Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/mayonaka-heart-tune-episode-6-subtitle-indonesia/" title="Mayonaka Heart Tune Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Mayonaka Heart Tune Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/yuusha-party-ni-kawaii-ko-ga-ita-node-kokuhaku-shitemita-episode-6-subtitle-indonesia/" title="Yuusha Party ni Kawaii Ko ga Ita node, Kokuhaku shitemita Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Yuusha Party ni Kawaii Ko ga Ita node, Kokuhaku shitemita Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/maou-no-musume-wa-yasashisugiru-episode-7-subtitle-indonesia/" title="Maou no Musume wa Yasashisugiru Episode 7 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Maou no Musume wa Yasashisugiru!! Subtitle Indonesia</span>
+        <span class="r">Episode 7</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/himesama-goumon-no-jikan-desu-s2-episode-5-subtitle-indonesia/" title="Himesama &#8220;Goumon&#8221; no Jikan desu S2 Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Himesama &#8220;Goumon&#8221; no Jikan desu Season 2 Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/golden-kamuy-s5-episode-6-subtitle-indonesia/" title="Golden Kamuy S5 Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Golden Kamuy: Saishuushou Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/vigilante-boku-no-hero-academia-illegals-s2-episode-6-subtitle-indonesia/" title="Vigilante: Boku no Hero Academia Illegals S2 Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Vigilante: Boku no Hero Academia Illegals Season 2 Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/ikoku-nikki-episode-6-subtitle-indonesia/" title="Ikoku Nikki Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Ikoku Nikki Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/jigokuraku-s2-episode-5-subtitle-indonesia/" title="Jigokuraku S2 Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Jigokuraku Season 2 Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/kizoku-tensei-megumareta-umare-kara-saikyou-no-chikara-wo-eru-episode-6-subtitle-indonesia/" title="Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/goumon-baito-kun-no-nichijou-episode-6-subtitle-indonesia/" title="Goumon Baito-kun no Nichijou Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Goumon Baito-kun no Nichijou Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/akuyaku-reijou-wa-ringoku-no-outaishi-ni-dekiai-sareru-episode-5-subtitle-indonesia/" title="Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai sareru Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai sareru Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/majutsushi-kunon-wa-mieteiru-episode-7-subtitle-indonesia/" title="Majutsushi Kunon wa Mieteiru Episode 7 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Majutsushi Kunon wa Mieteiru Subtitle Indonesia</span>
+        <span class="r">Episode 7</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/ao-no-orchestra-s2-epsode-18-subtitle-indonesia/" title="Ao no Orchestra S2 Epsode 18 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Ao no Orchestra Season 2 Subtitle Indonesia</span>
+        <span class="r">Episode 18</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/kaya-chan-wa-kowakunai-episode-5-subtitle-indonesia/" title="Kaya-chan wa Kowakunai Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Kaya-chan wa Kowakunai Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/seihantai-na-kimi-to-boku-episode-5-subtitle-indonesia/" title="Seihantai na Kimi to Boku Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Seihantai na Kimi to Boku Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/uruwashi-no-yoi-no-tsuki-episode-5-subtitle-indonesia/" title="Uruwashi no Yoi no Tsuki Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Uruwashi no Yoi no Tsuki Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/medalist-s2-episode-3-subtitle-indonesia/" title="Medalist S2 Episode 3 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Medalist Season 2 Subtitle Indonesia</span>
+        <span class="r">Episode 3</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/yuusha-no-kuzu-episode-5-subtitle-indonesia/" title="Yuusha no Kuzu Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Yuusha no Kuzu Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/toujima-tanzaburou-wa-kamen-rider-ni-naritai-episode-18-subtitle-indonesia/" title="Toujima Tanzaburou wa Kamen Rider ni Naritai Episode 18 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Toujima Tanzaburou wa Kamen Rider ni Naritai Subtitle Indonesia</span>
+        <span class="r">Episode 18</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/gnosia-episode-17-subtitle-indonesia/" title="Gnosia Episode 17 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Gnosia Subtitle Indonesia</span>
+        <span class="r">Episode 17</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/fate-strange-fake-episode-6-subtitle-indonesia/" title="Fate/strange Fake Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Fate/strange Fake Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/dead-account-episode-5-subtitle-indonesia/" title="Dead Account Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Dead Account Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/trigun-stargaze-episode-5-subtitle-indonesia/" title="Trigun Stargaze Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Trigun Stargaze Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/tensei-shitara-dragon-no-tamago-datta-episode-5-subtitle-indonesia/" title="Tensei shitara Dragon no Tamago datta Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Tensei shitara Dragon no Tamago datta Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/enen-no-shouboutai-s3-part-2-episode-5-subtitle-indonesia/" title="Enen no Shouboutai S3 Part 2 Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Enen no Shouboutai Season 3 : San no Shou Part 2 Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/hell-mode-yarikomizuki-no-gamer-wa-hai-settei-no-isekai-de-musou-suru-episode-5-subtitle-indonesia/" title="Hell Mode Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Hell Mode: Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/dark-moon-episode-5-subtitle-indonesia/" title="Dark Moon Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Dark Moon: Tsuki no Saidan Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/android-wa-keiken-ninzuu-ni-hairimasu-ka-episode-5-subtitle-indonesia/" title="Android wa Keiken Ninzuu ni Hairimasu ka Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Android wa Keiken Ninzuu ni Hairimasu ka?? Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/sousou-no-frieren-s2-episode-4-subtitle-indonesia/" title="Sousou no Frieren S2 Episode 4 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Sousou no Frieren Season 2 Subtitle Indonesia</span>
+        <span class="r">Episode 4</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/jujutsu-kaisen-season-3-the-culling-game-part-1-episode-6-subtitle-indonesia/" title="Jujutsu Kaisen Season 3: The Culling Game Part 1 Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Jujutsu Kaisen : The Culling Game Part 1 Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/roll-over-and-die-episode-5-subtitle-indonesia/" title="Roll Over And Die Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> &#8220;Omae Gotoki ga Maou ni Kateru to Omouna&#8221; to Yuusha Party wo Tsuihou sareta node, Outo de Kimama ni Kurashitai Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/mato-seihei-no-slave-s2-episode-5-subtitle-indonesia/" title="Mato Seihei no Slave S2 Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Mato Seihei no Slave Season 2 Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/eris-no-seihai-episode-5-subtitle-indonesia/" title="Eris no Seihai Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Eris no Seihai Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/toumei-otoko-to-ningen-onna-episode-5-subtitle-indonesia/" title="Toumei Otoko to Ningen Onna Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/mf-ghost-s3-episode-6-subtitle-indonesia/" title="MF Ghost S3 Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> MF Ghost Season 3 Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/yuusha-kei-ni-shosu-episode-5-subtitle-indonesia/" title="Yuusha-kei ni Shosu Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/jigoku-sensei-nube-part-2-episode-5-subtitle-indonesia/" title="Jigoku Sensei Nube Part 2 Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Jigoku Sensei Nube (2025) Part 2 Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/yuusha-party-wo-oidasareta-kiyoubinbou-episode-6-subtitle-indonesia/" title="Yuusha Party wo Oidasareta Kiyoubinbou Episode 6 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Yuusha Party wo Oidasareta Kiyoubinbou Subtitle Indonesia</span>
+        <span class="r">Episode 6</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/oshi-no-ko-s3-episode-4-subtitle-indonesia/" title="Oshi no Ko S3 Episode 4 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Oshi no Ko Season 3 Subtitle Indonesia</span>
+        <span class="r">Episode 4</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/shibou-yuugi-de-meshi-wo-kuu-episode-5-subtitle-indonesia/" title="Shibou Yuugi de Meshi wo Kuu Episode 5 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Shibou Yuugi de Meshi wo Kuu Subtitle Indonesia</span>
+        <span class="r">Episode 5</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/fumetsu-no-anata-e-s3-episode-16-subtitle-indonesia/" title="Fumetsu no Anata e S3 Episode 16 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Fumetsu no Anata e Season 3 Subtitle Indonesia</span>
+        <span class="r">Episode 16</span>    </a>
+</li>
+<li>
+    <a href="https://x3.sokuja.uk/chitose-kun-wa-ramune-bin-no-naka-episode-10-subtitle-indonesia/" title="Chitose-kun wa Ramune Bin no Naka Episode 10 Subtitle Indonesia">
+        <span class="l"><i class="fas fa-angle-right" aria-hidden="true"></i> Chitose-kun wa Ramune Bin no Naka Subtitle Indonesia</span>
+        <span class="r">Episode 10</span>    </a>
+</li>
+</ul></div></div><div class="section"><div class="releases"><h3>Genre Anime</h3></div><ul class='genre'>				<li><a href="https://x3.sokuja.uk/genres/action/" title="View all series in Action" >Action</a></li><li><a href="https://x3.sokuja.uk/genres/adult-cast/" title="View all series in Adult Cast" >Adult Cast</a></li><li><a href="https://x3.sokuja.uk/genres/adventure/" title="View all series in Adventure" >Adventure</a></li><li><a href="https://x3.sokuja.uk/genres/anthropomorphic/" title="View all series in Anthropomorphic" >Anthropomorphic</a></li><li><a href="https://x3.sokuja.uk/genres/apocalyptic-battle/" title="View all series in Apocalyptic Battle" >Apocalyptic Battle</a></li><li><a href="https://x3.sokuja.uk/genres/avant-garde/" title="View all series in Avant Garde" >Avant Garde</a></li><li><a href="https://x3.sokuja.uk/genres/award-winning/" title="View all series in Award Winning" >Award Winning</a></li><li><a href="https://x3.sokuja.uk/genres/battle/" title="View all series in Battle" >Battle</a></li><li><a href="https://x3.sokuja.uk/genres/cgdct/" title="View all series in CGDCT" >CGDCT</a></li><li><a href="https://x3.sokuja.uk/genres/childcare/" title="View all series in Childcare" >Childcare</a></li><li><a href="https://x3.sokuja.uk/genres/comedy/" title="View all series in Comedy" >Comedy</a></li><li><a href="https://x3.sokuja.uk/genres/curse-exorcism/" title="View all series in Curse Exorcism" >Curse Exorcism</a></li><li><a href="https://x3.sokuja.uk/genres/dark-fantasy/" title="View all series in Dark Fantasy" >Dark Fantasy</a></li><li><a href="https://x3.sokuja.uk/genres/dark-humor/" title="View all series in Dark Humor" >Dark Humor</a></li><li><a href="https://x3.sokuja.uk/genres/delinquents/" title="View all series in Delinquents" >Delinquents</a></li><li><a href="https://x3.sokuja.uk/genres/detective/" title="View all series in Detective" >Detective</a></li><li><a href="https://x3.sokuja.uk/genres/drama/" title="View all series in Drama" >Drama</a></li><li><a href="https://x3.sokuja.uk/genres/ecchi/" title="View all series in Ecchi" >Ecchi</a></li><li><a href="https://x3.sokuja.uk/genres/emotional-journey/" title="View all series in Emotional Journey" >Emotional Journey</a></li><li><a href="https://x3.sokuja.uk/genres/erotica/" title="View all series in Erotica" >Erotica</a></li><li><a href="https://x3.sokuja.uk/genres/fantasy/" title="View all series in Fantasy" >Fantasy</a></li><li><a href="https://x3.sokuja.uk/genres/fire-brigade/" title="View all series in Fire Brigade" >Fire Brigade</a></li><li><a href="https://x3.sokuja.uk/genres/gag-humor/" title="View all series in Gag Humor" >Gag Humor</a></li><li><a href="https://x3.sokuja.uk/genres/girls-love/" title="View all series in Girls Love" >Girls Love</a></li><li><a href="https://x3.sokuja.uk/genres/gore/" title="View all series in Gore" >Gore</a></li><li><a href="https://x3.sokuja.uk/genres/gourmet/" title="View all series in Gourmet" >Gourmet</a></li><li><a href="https://x3.sokuja.uk/genres/harem/" title="View all series in Harem" >Harem</a></li><li><a href="https://x3.sokuja.uk/genres/hentai/" title="View all series in Hentai" >Hentai</a></li><li><a href="https://x3.sokuja.uk/genres/hero-unit/" title="View all series in Hero Unit" >Hero Unit</a></li><li><a href="https://x3.sokuja.uk/genres/high-stakes-game/" title="View all series in High Stakes Game" >High Stakes Game</a></li><li><a href="https://x3.sokuja.uk/genres/historical/" title="View all series in Historical" >Historical</a></li><li><a href="https://x3.sokuja.uk/genres/horror/" title="View all series in Horror" >Horror</a></li><li><a href="https://x3.sokuja.uk/genres/idol/" title="View all series in Idol" >Idol</a></li><li><a href="https://x3.sokuja.uk/genres/idols-female/" title="View all series in Idols (Female)" >Idols (Female)</a></li><li><a href="https://x3.sokuja.uk/genres/isekai/" title="View all series in Isekai" >Isekai</a></li><li><a href="https://x3.sokuja.uk/genres/iyashikei/" title="View all series in Iyashikei" >Iyashikei</a></li><li><a href="https://x3.sokuja.uk/genres/josei/" title="View all series in Josei" >Josei</a></li><li><a href="https://x3.sokuja.uk/genres/kids/" title="View all series in Kids" >Kids</a></li><li><a href="https://x3.sokuja.uk/genres/love-polygon/" title="View all series in Love Polygon" >Love Polygon</a></li><li><a href="https://x3.sokuja.uk/genres/love-status-quo/" title="View all series in Love Status Quo" >Love Status Quo</a></li><li><a href="https://x3.sokuja.uk/genres/magic/" title="View all series in Magic" >Magic</a></li><li><a href="https://x3.sokuja.uk/genres/magical-sex-shift/" title="View all series in Magical Sex Shift" >Magical Sex Shift</a></li><li><a href="https://x3.sokuja.uk/genres/mahou-shoujo/" title="View all series in Mahou Shoujo" >Mahou Shoujo</a></li><li><a href="https://x3.sokuja.uk/genres/martial-arts/" title="View all series in Martial Arts" >Martial Arts</a></li><li><a href="https://x3.sokuja.uk/genres/mecha/" title="View all series in Mecha" >Mecha</a></li><li><a href="https://x3.sokuja.uk/genres/medical/" title="View all series in Medical" >Medical</a></li><li><a href="https://x3.sokuja.uk/genres/military/" title="View all series in Military" >Military</a></li><li><a href="https://x3.sokuja.uk/genres/music/" title="View all series in Music" >Music</a></li><li><a href="https://x3.sokuja.uk/genres/mystery/" title="View all series in Mystery" >Mystery</a></li><li><a href="https://x3.sokuja.uk/genres/mythology/" title="View all series in Mythology" >Mythology</a></li><li><a href="https://x3.sokuja.uk/genres/organized-crime/" title="View all series in Organized Crime" >Organized Crime</a></li><li><a href="https://x3.sokuja.uk/genres/otaku-culture/" title="View all series in Otaku Culture" >Otaku Culture</a></li><li><a href="https://x3.sokuja.uk/genres/parody/" title="View all series in Parody" >Parody</a></li><li><a href="https://x3.sokuja.uk/genres/performing-arts/" title="View all series in Performing Arts" >Performing Arts</a></li><li><a href="https://x3.sokuja.uk/genres/pets/" title="View all series in Pets" >Pets</a></li><li><a href="https://x3.sokuja.uk/genres/prison/" title="View all series in Prison" >Prison</a></li><li><a href="https://x3.sokuja.uk/genres/psychological/" title="View all series in Psychological" >Psychological</a></li><li><a href="https://x3.sokuja.uk/genres/psychological-thriller/" title="View all series in Psychological Thriller" >Psychological Thriller</a></li><li><a href="https://x3.sokuja.uk/genres/racing/" title="View all series in Racing" >Racing</a></li><li><a href="https://x3.sokuja.uk/genres/reincarnation/" title="View all series in Reincarnation" >Reincarnation</a></li><li><a href="https://x3.sokuja.uk/genres/romance/" title="View all series in Romance" >Romance</a></li><li><a href="https://x3.sokuja.uk/genres/romantic-subtext/" title="View all series in Romantic Subtext" >Romantic Subtext</a></li><li><a href="https://x3.sokuja.uk/genres/samurai/" title="View all series in Samurai" >Samurai</a></li><li><a href="https://x3.sokuja.uk/genres/school/" title="View all series in School" >School</a></li><li><a href="https://x3.sokuja.uk/genres/sci-fi/" title="View all series in Sci-Fi" >Sci-Fi</a></li><li><a href="https://x3.sokuja.uk/genres/seinen/" title="View all series in Seinen" >Seinen</a></li><li><a href="https://x3.sokuja.uk/genres/shonen/" title="View all series in Shōnen" >Shōnen</a></li><li><a href="https://x3.sokuja.uk/genres/shoujo/" title="View all series in Shoujo" >Shoujo</a></li><li><a href="https://x3.sokuja.uk/genres/shounen/" title="View all series in Shounen" >Shounen</a></li><li><a href="https://x3.sokuja.uk/genres/showbiz/" title="View all series in Showbiz" >Showbiz</a></li><li><a href="https://x3.sokuja.uk/genres/slice-of-life/" title="View all series in Slice of Life" >Slice of Life</a></li><li><a href="https://x3.sokuja.uk/genres/space/" title="View all series in Space" >Space</a></li><li><a href="https://x3.sokuja.uk/genres/sports/" title="View all series in Sports" >Sports</a></li><li><a href="https://x3.sokuja.uk/genres/strategy-game/" title="View all series in Strategy Game" >Strategy Game</a></li><li><a href="https://x3.sokuja.uk/genres/super-power/" title="View all series in Super Power" >Super Power</a></li><li><a href="https://x3.sokuja.uk/genres/supernatural/" title="View all series in Supernatural" >Supernatural</a></li><li><a href="https://x3.sokuja.uk/genres/survival/" title="View all series in Survival" >Survival</a></li><li><a href="https://x3.sokuja.uk/genres/suspense/" title="View all series in Suspense" >Suspense</a></li><li><a href="https://x3.sokuja.uk/genres/team-sports/" title="View all series in Team Sports" >Team Sports</a></li><li><a href="https://x3.sokuja.uk/genres/thriller-sosial/" title="View all series in Thriller Sosial" >Thriller Sosial</a></li><li><a href="https://x3.sokuja.uk/genres/time-travel/" title="View all series in Time Travel" >Time Travel</a></li><li><a href="https://x3.sokuja.uk/genres/urban-fantasy/" title="View all series in Urban Fantasy" >Urban Fantasy</a></li><li><a href="https://x3.sokuja.uk/genres/vampire/" title="View all series in Vampire" >Vampire</a></li><li><a href="https://x3.sokuja.uk/genres/video-game/" title="View all series in Video Game" >Video Game</a></li><li><a href="https://x3.sokuja.uk/genres/villainess/" title="View all series in Villainess" >Villainess</a></li><li><a href="https://x3.sokuja.uk/genres/workplace/" title="View all series in Workplace" >Workplace</a></li></ul></div><div class="section"><div class="releases"><h3>Anime Season (Musim)</h3></div><div class='mseason'>
+    <ul class='season'>
+    <li><a href="https://x3.sokuja.uk/season/fall-1999/" title="View all series in Fall 1999" >Fall 1999 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2012/" title="View all series in Fall 2012" >Fall 2012 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2013/" title="View all series in Fall 2013" >Fall 2013 <span>3</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2014/" title="View all series in Fall 2014" >Fall 2014 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2015/" title="View all series in Fall 2015" >Fall 2015 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2016/" title="View all series in Fall 2016" >Fall 2016 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2017/" title="View all series in Fall 2017" >Fall 2017 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2018/" title="View all series in Fall 2018" >Fall 2018 <span>5</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2019/" title="View all series in Fall 2019" >Fall 2019 <span>3</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2020/" title="View all series in Fall 2020" >Fall 2020 <span>6</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2021/" title="View all series in Fall 2021" >Fall 2021 <span>4</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2022/" title="View all series in Fall 2022" >Fall 2022 <span>27</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2023/" title="View all series in Fall 2023" >Fall 2023 <span>37</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2024/" title="View all series in Fall 2024" >Fall 2024 <span>39</span></a></li><li><a href="https://x3.sokuja.uk/season/fall-2025/" title="View all series in Fall 2025" >Fall 2025 <span>32</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2009/" title="View all series in Spring 2009" >Spring 2009 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2010/" title="View all series in Spring 2010" >Spring 2010 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2011/" title="View all series in Spring 2011" >Spring 2011 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2013/" title="View all series in Spring 2013" >Spring 2013 <span>3</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2014/" title="View all series in Spring 2014" >Spring 2014 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2015/" title="View all series in Spring 2015" >Spring 2015 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2016/" title="View all series in Spring 2016" >Spring 2016 <span>3</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2017/" title="View all series in Spring 2017" >Spring 2017 <span>3</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2018/" title="View all series in Spring 2018" >Spring 2018 <span>5</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2019/" title="View all series in Spring 2019" >Spring 2019 <span>4</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2020/" title="View all series in Spring 2020" >Spring 2020 <span>3</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2021/" title="View all series in Spring 2021" >Spring 2021 <span>9</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2022/" title="View all series in Spring 2022" >Spring 2022 <span>5</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2023/" title="View all series in Spring 2023" >Spring 2023 <span>31</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2024/" title="View all series in Spring 2024" >Spring 2024 <span>41</span></a></li><li><a href="https://x3.sokuja.uk/season/spring-2025/" title="View all series in Spring 2025" >Spring 2025 <span>33</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2006/" title="View all series in Summer 2006" >Summer 2006 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2007/" title="View all series in Summer 2007" >Summer 2007 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2008/" title="View all series in Summer 2008" >Summer 2008 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2010/" title="View all series in Summer 2010" >Summer 2010 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2012/" title="View all series in Summer 2012" >Summer 2012 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2013/" title="View all series in Summer 2013" >Summer 2013 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2014/" title="View all series in Summer 2014" >Summer 2014 <span>3</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2015/" title="View all series in Summer 2015" >Summer 2015 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2016/" title="View all series in Summer 2016" >Summer 2016 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2017/" title="View all series in Summer 2017" >Summer 2017 <span>4</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2018/" title="View all series in Summer 2018" >Summer 2018 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2019/" title="View all series in Summer 2019" >Summer 2019 <span>6</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2020/" title="View all series in Summer 2020" >Summer 2020 <span>5</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2021/" title="View all series in Summer 2021" >Summer 2021 <span>5</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2022/" title="View all series in Summer 2022" >Summer 2022 <span>25</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2023/" title="View all series in Summer 2023" >Summer 2023 <span>34</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2024/" title="View all series in Summer 2024" >Summer 2024 <span>25</span></a></li><li><a href="https://x3.sokuja.uk/season/summer-2025/" title="View all series in Summer 2025" >Summer 2025 <span>36</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2012/" title="View all series in Winter 2012" >Winter 2012 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2015/" title="View all series in Winter 2015" >Winter 2015 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2016/" title="View all series in Winter 2016" >Winter 2016 <span>1</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2017/" title="View all series in Winter 2017" >Winter 2017 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2018/" title="View all series in Winter 2018" >Winter 2018 <span>2</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2019/" title="View all series in Winter 2019" >Winter 2019 <span>3</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2020/" title="View all series in Winter 2020" >Winter 2020 <span>3</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2021/" title="View all series in Winter 2021" >Winter 2021 <span>6</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2022/" title="View all series in Winter 2022" >Winter 2022 <span>4</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2023/" title="View all series in Winter 2023" >Winter 2023 <span>33</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2024/" title="View all series in Winter 2024" >Winter 2024 <span>39</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2025/" title="View all series in Winter 2025" >Winter 2025 <span>34</span></a></li><li><a href="https://x3.sokuja.uk/season/winter-2026/" title="View all series in Winter 2026" >Winter 2026 <span>40</span></a></li>	</ul>
+</div>
+<div class='clear'></div></div><div class="widget_text section"><div class="releases"><h3>Pasang Iklan?</h3></div><div class="textwidget custom-html-widget"><a href="https://sokuja.net/sda/">Klik Disini</a></div></div>			
+</div><div class="clear"></div>
+</div>
+</div>
+
+<div data-rocket-location-hash="f824986104ea16665002a74ddadb5726" id="footer">
+	<footer id="colophon" class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo">
+		<div class="footercopyright">
+				<div class="copyright marx">
+			<div class="footer-logo"><img src="https://gbr.sokuja.uk/logo.png" title="" alt=""></div>
+			<div class="txt">
+				<span>SITUS SOKUJA YANG ASLI</span>
+				<p><!--<b><a href='https://sokuja.net' target='_blank'>SOKUJA</a></b> | <b><a href='https://sokuja.net/animein-animeindo-animelovers-animeinfo-animeforum/' target='_blank'>ANIMEIN</a></b> | <b><a href='https://sokuja.net/nanime-nonton-streaming-download-anime-sub-indo/' target='_blank'>NANIME.IN</a></b> | <b><a href='https://sokuja.net/otakudesu-nonton-streaming-download-anime-sub-indo/' target='_blank'>OTAKUDESU</a></b> | <b><a href='https://sokuja.net/oploverz-asia-situs-oploverz-yang-asli-download-anime-sub-indo-fansub-oploverz/' target='_blank'>OPLOVERZ</a></b> | <b><a href='https://sokuja.net/samehadaku-samehadaku-care-nonton-streaming-anime-sub-indo/' target='_blank'>SAMEHADAKU</a></b> | <b><a href='https://sokuja.net/samehadaku-samehadaku-care-nonton-streaming-anime-sub-indo/' target='_blank'>SAMEHADA</a></b> | <b><a href='https://sokuja.net' target='_blank'>NONTON ANIME</a></b> | <b><a href='https://sokuja.net' target='_blank'>ANIMEINDO</a></b> | <b><a href='https://sokuja.net/animeindo-nonton-streaming-anime-subtitle-indonesia/' target='_blank'>ANIME INDO</a></b> | <b><a href='https://sokuja.net/gomunime-terbaru-nonton-anime-sub-indo/' target='_blank'>GOMUNIME</a></b> | <b><a href='https://sokuja.net/animasu-nonton-streaming-download-anime-subtitle-indonesia/' target='_blank'>ANIMASU</a></b> | <b><a href='https://sokuja.net/animeku-nonton-anime-sub-indo/' target='_blank'>ANIMEKU</a></b> | <b><a href='https://sokuja.net/nanimex1-com-nanimex1-nonton-streaming-anime-sub-indo/' target='_blank'>NANIMEX1</a></b> | <b><a href='https://sokuja.net/situs-anoboy-yang-asli-anime-sub-indo-gratis/' target='_blank'>ANOBOY</a></b> | <b><a href='https://sokuja.net/kuramanime-portal-download-dan-streaming-anime-indonesia/' target='_blank'>KURAMANIME</a></b>--></p>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/sokuja/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div data-rocket-location-hash="63a649ab837f2564f360efb49e65d8fa" id="UeEwLuh" style="width: 100%;text-align: center;display: scroll;position:fixed;bottom: 0;margin: 0 auto;z-index: 103;">
+<div data-rocket-location-hash="0939139cbb8beb3e34419a8214055601" align="center"><a id="mNG0nt0Il" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('UeEwLuh').style.display = 'none';" style="cursor:pointer;" data-cf-modified-b89dc23b5ad74440991c538d-=""><img src="https://sokuja.net/wp-content/uploads/2025/09/btn_close.jpg"/></a></div>
+<div data-rocket-location-hash="5cf6dfc222dfab27bcef1dafebb7b081" class="blox iDd0s-4dgu4rd">
+<div data-rocket-location-hash="a5f93da8cc956b8f31f4b67513b80a9f" id="sadar" style="line-height: 0; letter-spacing: -4px;">
+<a href="https://injd.site/login" rel="noopener nofollow"><img fetchpriority="high" src="https://gbr.sokuja.id/wp-content/uploads/2026/01/Anime-judi89.gif" border="0" width="570"></a>
+<a href="https://orangarab.fun/777" rel="noopener nofollow"><img fetchpriority="high" src="https://gbr.sokuja.id/wp-content/uploads/2026/01/Anime-arab777.gif" border="0" width="570"></a>
+</div>
+<script type="rocketlazyloadscript">
+document.addEventListener("DOMContentLoaded", function() {
+    var container = document.getElementById("sadar");
+    for (var i = container.children.length; i >= 0; i--) {
+        container.appendChild(container.children[Math.random() * i | 0]);
+    }
+});
+</script></div>
+</div>
+<script type="rocketlazyloadscript">
+var dmlogo1 = 'https://gbr.sokuja.uk/logo.png';
+var dmlogo2 = 'https://gbr.sokuja.uk/logo.png';
+jQuery("#thememode input[type='checkbox']").on('change', function(){
+	var is_on = jQuery("#thememode input[type='checkbox']").prop("checked");
+	if (is_on == false){
+		if (dmlogo2) jQuery(".logos img").attr('src', dmlogo2);
+		localStorage.setItem("thememode", "lightmode");
+		jQuery("body").addClass("lightmode");
+		jQuery("body").removeClass("darkmode");
+	}else{
+		if (dmlogo1) jQuery(".logos img").attr('src', dmlogo1);
+		localStorage.setItem("thememode", "darkmode");
+		jQuery("body").removeClass("lightmode");
+		jQuery("body").addClass("darkmode");
+	}
+});
+</script>
+<script type="rocketlazyloadscript">
+    document.addEventListener("DOMContentLoaded", function() {
+        let links = document.querySelectorAll('a');
+        links.forEach(link => {
+            if (link.href.includes('rumahdealer.com')) {
+                link.href = link.href.replace('rumahdealer.com', 'bacaman.id');
+            }
+        });
+    });
+</script>
+<noscript>
+<style>a{visibility:hidden !important;}.noscript{position:fixed;top:100px;text-align:center;width:100%;color:#FFF;background:red}</style>
+<div class="noscript">Please Enable JavaScript</div>
+</noscript>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/plugins/sokuja/assets/js/servers.js?ver=1770044876"></script>
+<script type="rocketlazyloadscript">
+var sora_included_links = "";
+var sora_excluded_links = "gbr.sokuja.uk,sokuja.uk,x3.sokuja.uk,x4.sokuja.uk,play.google.com,t.me,www.facebook.com,www.youtube.com,twitter.com,www.twitter.com,pinterest.com,whatsapp,1.1.1.1,sstatic1.histats.com,sokuja.net,sokuja.com,sokuja.org,rumahdealer.com,sokuja.id,sokuja.in,sokuja.bar,sokuja.biz,sokuja.site,sokuja.xyz,45.12.2.6,sokuja.online,sokuja.life,sokuja.live,vpnnawala.site,sokuja.pw,bacaman.net,sokuja.my.id,sokuja.t.me,tv2.sokuja.my.id,tv3.sokuja.my.id,tv4.sokuja.my.id,docs.google.com,one.one.one.one,bacaman.id,gbr.sokuja.id,s10.histats.com,www.googletagmanager.com,googletagmanager.com,staging.sokuja.net,www.joyboy88org.com,www.metaplay88newink.autos,lunox88newbond.beauty,www.keys88top.com,www.gaming88betpro.bond,www.pstoresprowin.xyz,epicplay88newbond.autos,www.ninjaplay88pro.mom,lapakhoki88vippro.com,gameland88newautos.com,www.glorybet77prowin.xyz,warungs88proink.com,gusion88-new.xyz,menujupenta.site,akseskaiko.cam,terbangrusia.site,bergurukecina.fun,orangarab.fun,injd.site,goratu.site,kegz.site,goid.space";
+var sora_base_url = "https://bacaman.id";
+soralink.run();
+</script>
+<script type="rocketlazyloadscript">
+var links = document.querySelectorAll('a');
+
+links.forEach(function(link) {
+  if (link.getAttribute('target') === '_blank') {
+    link.removeAttribute('target');
+  }
+});
+<!-- crawler -->
+const bots=["adidxbot","bingbot","GoogleOther","Googlebot","InspectionTool","YandexBot","Baiduspider","DuckDuckGoBot","SeznamBot","EcosiaBot","BingPreview","MJ12bot","AhrefsBot","SEMrushBot","Mozbot","FeedlyBot","archive.org_bot","heritrix","Sogou","Applebot","facebookexternalhit","Facebot","Twitterbot","LinkedInBot","Pinterestbot","Slackbot-LinkExpanding","Discordbot","Google Favicon","AdsBot-Google","Googlebot-Image","Googlebot-Video","UptimeRobot","PetalBot","Exabot","Qwantify","DotBot","SemrushBot-SI","Yahoo! Slurp","MSNBot","CocCocBot","ia_archiver","VoilaBot","archive.is_bot","TelegramBot","WhatsApp","Barkrowler","ZoominfoBot","SerpstatBot","GrapeshotCrawler","BLEXBot","AlgoliaBot"];function isBot(){return bots.some(bot=>navigator.userAgent.toLowerCase().includes(bot.toLowerCase()))}function removeDivs(){["kIhlucbv","KsCreRt","AMcFjLQl"].forEach(id=>{const e=document.getElementById(id);e&&e.remove()})}isBot()&&removeDivs();
+</script><script type="b89dc23b5ad74440991c538d-text/javascript" id="rocket_lazyload_css-js-extra">
+/* <![CDATA[ */
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+/* ]]> */
+</script>
+<script type="b89dc23b5ad74440991c538d-text/javascript" id="rocket_lazyload_css-js-after">
+/* <![CDATA[ */
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/js/filter.js?ver=1770044876" id="filter-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/js/tsevents.js?ver=1770044876" id="ts-events-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://x3.sokuja.uk/wp-content/cache/min/1/wp-content/themes/sokuja/assets/js/search.js?ver=1770044876" id="ts-search-js"></script>
+<script type="b89dc23b5ad74440991c538d-text/javascript">window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://x3.sokuja.uk/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js" type="b89dc23b5ad74440991c538d-text/javascript"></script><script type="b89dc23b5ad74440991c538d-text/javascript">var rocket_beacon_data = {"ajax_url":"https:\/\/x3.sokuja.uk\/wp-admin\/admin-ajax.php","nonce":"ded2e52767","url":"https:\/\/x3.sokuja.uk\/end-oshi-no-ko-episode-11-subtitle-indonesia","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true,"preload_fonts":true,"preconnect_external_domain":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800,"preload_fonts_exclusions":["api.fontshare.com","cdn.fontshare.com"],"processed_extensions":["woff2","woff","ttf"],"external_font_exclusions":[],"preconnect_external_domain_elements":["link","script","iframe"],"preconnect_external_domain_exclusions":["static.cloudflareinsights.com","rel=\"profile\"","rel=\"preconnect\"","rel=\"dns-prefetch\"","rel=\"icon\""]}</script><script data-name="wpr-wpr-beacon" src='https://x3.sokuja.uk/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async type="b89dc23b5ad74440991c538d-text/javascript"></script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b89dc23b5ad74440991c538d-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ccf5c43b91544bb',t:'MTc3MDkzMzY0Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1770819955 -->
